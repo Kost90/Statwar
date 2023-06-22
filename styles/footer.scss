@@ -1,0 +1,23 @@
+.footer{
+    background-color: #3B5249;
+    p{
+        color: rgba(255, 255, 255, 0.80);
+        font-size: 14px;
+        line-height: 27px;
+    }
+}
+
+.flex_footer{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border-bottom: 1px solid #C4C4C4;
+    text-align: center;
+}
+
+.footer_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 0;
+}

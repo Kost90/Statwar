@@ -1,0 +1,42 @@
+.sec-4 {
+  background-image: url("./images/Background_section4_mobile.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+.container_flex_sec_4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding-bottom: 30px;
+}
+.container_flex_sec_4 h1 {
+  font-size: 26px;
+  line-height: 29.866px;
+}
+.container_flex_sec_4 p {
+  font-size: 18px;
+  line-height: 30px;
+}
+.container_flex_sec_4 button {
+  width: 340px;
+  padding: 14px 28px 14px 32px;
+  border-radius: 1px;
+  background: var(--button, #3671E9);
+  font-size: 18px;
+  line-height: 27px;
+  color: white;
+}
+
+.flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 30px;
+}/*# sourceMappingURL=section_4.css.map */

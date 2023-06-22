@@ -1,0 +1,15 @@
+@import url(./common.css);
+@import url(./header.css);
+@import url(./section_1.css);
+@import url(./section_2.css);
+@import url(./section_3.css);
+@import url(./section_4.css);
+@import url(./footer.css);
+
+body{
+    background-color:#D9D9D9;
+}
+
+.container{
+    padding: 0 10px;
+}

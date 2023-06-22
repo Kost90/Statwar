@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'Inter', sans-serif;
+    src: url("../fonts/Inter-Regular.ttf");
+
+  }
+  @font-face {
+    font-family: 'Inter', sans-serif;
+    src: url("../fonts/Inter-Medium.ttf");
+
+  }
+  @font-face {
+    font-family: 'Inter', sans-serif;
+    src: url("../fonts/Inter-Bold.ttf");
+  }
+  
+@media (max-width:767px) {
+    html {
+        font-family: 'Inter', sans-serif;
+        font-size: 18px;
+        line-height: 21px;
+    }
+    html h1 {
+        font-size: 26px;
+        line-height: 30px;
+    }
+    html h3 {
+        font-size: 18px;
+        line-height: 27px;
+    }
+    p {
+        font-size: 22px;
+        line-height: 32px;
+    }
+}
+
+@media (min-width:768px) {
+    html {
+    font-family: "TT Norms", sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+}
+    html h1 {
+    font-size: 40px;
+    line-height: 54px;
+}
+html h3 {
+    font-size: 30px;
+    line-height: 38px;
+}
+p {
+    font-size: 22px;
+    line-height: 33px;
+}
+}
+
