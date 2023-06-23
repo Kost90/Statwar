@@ -1,5 +1,6 @@
 .footer {
   background-color: #3B5249;
+  text-align: center;
 }
 .footer p {
   color: rgba(255, 255, 255, 0.8);
@@ -11,7 +12,6 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  border-bottom: 1px solid #C4C4C4;
   text-align: center;
 }
 
@@ -20,4 +20,9 @@
   justify-content: space-between;
   align-items: center;
   padding: 32px 0;
+}
+
+.footer_border {
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  margin-bottom: 30px;
 }/*# sourceMappingURL=footer.css.map */

@@ -48,25 +48,25 @@
         right: -5px;
     }
     }
-    &:hover{
-        li{
-            transition: 0.5s;
-            justify-content: space-between;
-            background-color: white;
-            width: 114px;
-            padding: 10px;
-            p{
-                display: inline;
-            }
-            .arrow{
-                position: absolute;
-                top: 0;
-                right: -5px;
-                transform: rotate(-180deg);
-                transition: 0.8ms;
+        &:hover{
+            li{
+                transition: 0.5s;
+                justify-content: space-between;
+                background-color: white;
+                width: 114px;
+                padding: 10px;
+                p{
+                    display: inline;
+                }
+                .arrow{
+                    position: absolute;
+                    top: 0;
+                    right: -5px;
+                    transform: rotate(-180deg);
+                    transition: 0.8ms;
+                }
             }
         }
-    }
 }
 
 .flex_container{
