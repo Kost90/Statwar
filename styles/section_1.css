@@ -19,11 +19,7 @@
 }
 
 .menu_statistic {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   width: 340px;
-  height: 48px;
   background-color: #77995D;
   margin: 0 auto;
 }
@@ -32,6 +28,13 @@
   width: 48px;
   height: 48px;
   background-color: #77995D;
+}
+.menu_statistic button svg {
+  width: 48px;
+  height: 48px;
+}
+.menu_statistic .btn_transform {
+  transform: rotate(180deg);
 }
 
 .side_menu li {
@@ -51,9 +54,28 @@
 }
 .side_menu .active {
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 6px;
+}
+.side_menu .show {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.direction_row {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6px;
+}
+
+.direction_column {
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
 .flex_container {
