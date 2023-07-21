@@ -14,20 +14,27 @@
 }
 
 .wrapper_sec1 {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
   padding-top: 30px;
   padding-bottom: 17px;
 }
 
 .menu_statistic {
-  width: 340px;
-  background-color: #77995D;
+  width: 100%;
+  background-color: #77995d;
   margin: 0 auto;
 }
 .menu_statistic button {
+  position: absolute;
   display: flex;
   width: 48px;
   height: 48px;
-  background-color: #77995D;
+  background-color: #77995d;
+  top: 0px;
 }
 .menu_statistic button svg {
   width: 48px;
@@ -35,11 +42,16 @@
 }
 .menu_statistic .btn_transform {
   transform: rotate(180deg);
+  border-bottom: 1px solid black;
 }
 
+.side_menu {
+  position: relative;
+  border: 1px solid black;
+}
 .side_menu li {
   display: none;
-  background-color: #77995D;
+  background-color: #77995d;
   cursor: pointer;
   width: 100%;
   padding: 10px;
@@ -61,10 +73,17 @@
   display: flex;
   align-items: center;
   gap: 6px;
+  border: 1px solid black;
+}
+.side_menu .show:first-child {
+  position: relative;
+  border: none;
+  top: 25px;
+  height: 0px;
 }
 
 .direction_row {
-  flex-direction: row;
+  flex-direction: row-reverse;
   display: flex;
   justify-content: space-between;
   align-items: center;

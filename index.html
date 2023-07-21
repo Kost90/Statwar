@@ -47,78 +47,6 @@
         <div class="wrapper_sec1">
           <div class="menu_statistic">
             <ul class="side_menu direction_row" id="side_menu">
-                <li data-value="Soldier" class="active">
-                  <svg>
-                    <use
-                      href="./sprites.svg#Soldier"
-                      xlink:href="./sprites.svg#Soldier"
-                    ></use>
-                  </svg>
-                  <p>Військові рф</p>
-                </li>
-                <li data-value="Tanks">
-                  <svg>
-                    <use
-                      href="./sprites.svg#Tanks"
-                      xlink:href="./sprites.svg#Tanks"
-                    ></use>
-                  </svg>
-                  <p>Танки</p>
-                </li>
-                <li data-value="Armored_machine">
-                  <svg>
-                    <use
-                      href="./sprites.svg#Bmm"
-                      xlink:href="./sprites.svg#Bmm"
-                    ></use>
-                  </svg>
-                  <p>ББМашини</p>
-                </li>
-                <li data-value="Artyleri">
-                  <svg>
-                    <use
-                      href="./sprites.svg#Arta"
-                      xlink:href="./sprites.svg#Arta"
-                    ></use>
-                  </svg>
-                  <p>Артилерія</p>
-                </li>
-                <li data-value="Rszv">
-                  <svg>
-                    <use
-                      href="./sprites.svg#Rszo"
-                      xlink:href="./sprites.svg#Rszo"
-                    ></use>
-                  </svg>
-                  <p>РСЗВ</p>
-                </li>
-                <li data-value="Planes">
-                  <svg>
-                    <use
-                      href="./sprites.svg#Planes"
-                      xlink:href="./sprites.svg#Planes"
-                    ></use>
-                  </svg>
-                  <p>Бойові літаки</p>
-                </li>
-                <li>
-                  <svg>
-                    <use
-                      href="./sprites.svg#Helicopters"
-                      xlink:href="./sprites.svg#Helicopters"
-                    ></use>
-                  </svg>
-                  <p>Гелікоптери</p>
-                </li>
-                <li data-value="Pvo">
-                  <svg>
-                    <use
-                      href="./sprites.svg#Pvo"
-                      xlink:href="./sprites.svg#Pvo"
-                    ></use>
-                  </svg>
-                  <p>ППО/ЗРК</p>
-                </li>
               <button id="btn_arrow">
                 <svg>
                   <use
@@ -127,26 +55,107 @@
                   ></use>
                 </svg>
               </button>
+              <li data-value="Soldier" class="active">
+                <svg>
+                  <use
+                    href="./sprites.svg#Soldier"
+                    xlink:href="./sprites.svg#Soldier"
+                  ></use>
+                </svg>
+                <p>Військові рф</p>
+              </li>
+              <li data-value="Tanks">
+                <svg>
+                  <use
+                    href="./sprites.svg#Tanks"
+                    xlink:href="./sprites.svg#Tanks"
+                  ></use>
+                </svg>
+                <p>Танки</p>
+              </li>
+              <li data-value="Armored_machine">
+                <svg>
+                  <use
+                    href="./sprites.svg#Bmm"
+                    xlink:href="./sprites.svg#Bmm"
+                  ></use>
+                </svg>
+                <p>ББМашини</p>
+              </li>
+              <li data-value="Artyleri">
+                <svg>
+                  <use
+                    href="./sprites.svg#Arta"
+                    xlink:href="./sprites.svg#Arta"
+                  ></use>
+                </svg>
+                <p>Артилерія</p>
+              </li>
+              <li data-value="Rszv">
+                <svg>
+                  <use
+                    href="./sprites.svg#Rszo"
+                    xlink:href="./sprites.svg#Rszo"
+                  ></use>
+                </svg>
+                <p>РСЗВ</p>
+              </li>
+              <li data-value="Planes">
+                <svg>
+                  <use
+                    href="./sprites.svg#Planes"
+                    xlink:href="./sprites.svg#Planes"
+                  ></use>
+                </svg>
+                <p>Бойові літаки</p>
+              </li>
+              <li data-value="Helicopters">
+                <svg>
+                  <use
+                    href="./sprites.svg#Helicopters"
+                    xlink:href="./sprites.svg#Helicopters"
+                  ></use>
+                </svg>
+                <p>Гелікоптери</p>
+              </li>
+              <li data-value="Pvo">
+                <svg>
+                  <use
+                    href="./sprites.svg#Pvo"
+                    xlink:href="./sprites.svg#Pvo"
+                  ></use>
+                </svg>
+                <p>ППО/ЗРК</p>
+              </li>
             </ul>
           </div>
 
-          <div class="statistic_container">
-            <!-- <li id="alive" class="flex_container">
-                            <img src="./styles/images/Ellipse_red.png" alt="ellipse_red">
-                            <p>Живі</p>
-                        </li>
-                        <li id="dead" class="flex_container">
-                            <img src="./styles//images/Ellipse_black.png" alt="ellipse_black">
-                            <p>Мертві</p>
-                        </li>
-                        <li id="wounded" class="flex_container">
-                            <img src="./styles//images/Ellipse_blue.png" alt="ellipse_blue">
-                            <p>Важко поранені</p>
-                        </li>
-                        <li id="static_ellips">
-                            <img src="./styles/images/Static_ellips.png" alt="Statistic_ellips">
-                        </li> -->
-            <canvas id="ellips"> </canvas>
+          <div class="statistic_container" id="year-statistic">
+            <div id="alive" class="flex_container">
+              <img src="./styles/images/Ellipse_red.png" alt="ellipse_red" />
+              <p>Живі</p>
+            </div>
+            <div id="dead" class="flex_container">
+              <img
+                src="./styles//images/Ellipse_black.png"
+                alt="ellipse_black"
+              />
+              <p>Мертві</p>
+            </div>
+            <div id="wounded" class="flex_container">
+              <img
+                src="./styles//images/Ellipse_blue.png"
+                alt="ellipse_blue"
+              />
+              <p>Важко поранені</p>
+            </div>
+            <div id="static_ellips">
+              <img
+                src="./styles/images/Static_ellips.png"
+                alt="Statistic_ellips"
+              />
+            </div>
+            <!-- <canvas id="ellips"></canvas> -->
           </div>
         </div>
         <div id="grafic_container" class="grafic_container">
