@@ -15,11 +15,12 @@
 
 .wrapper_sec2 {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
   padding-top: 30px;
   padding-bottom: 17px;
-  gap: 20px;
 }
 
 .statistic_container_sec2 {

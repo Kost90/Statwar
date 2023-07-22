@@ -3,11 +3,14 @@ const hamburgerOpenBtn = document.querySelector("#hamburder_menu_open_btn");
 const div = document.createElement("div");
 const p = document.createElement("p");
 const sideMenu = document.querySelector("#side_menu");
+const sideMenuSec2 = document.querySelector("#side_menu_sec2");
+const parentTagSec1 = [];
+const parentTagSec2 = [];
 const canvas = document.querySelector("#ellips");
 const defaultValue = "Soldier";
 let currentValue = defaultValue;
-const parentTag = [];
 const btnArrow = document.querySelector("#btn_arrow");
+const btnArrowSec2 = document.querySelector("#btn_arrow_sec2");
 
 function OpenHamburgermenu() {
   if (div.classList.contains("menu")) {
@@ -42,36 +45,47 @@ function handelClick(e) {
   }
 }
 
-for (const child of sideMenu.children) {
-  const Li = child;
-  if (child.tagName === "LI") {
-    parentTag.push(Li);
-    child.addEventListener("click", (e) => {
-      parentTag.forEach((element) => {
-        if (element.classList.contains("active")) {
-          element.classList.remove("active");
-        }
-        element.classList.remove("show");
-        btnArrow.classList.remove("btn_transform");
-        sideMenu.classList.remove("direction_column");
-        sideMenu.classList.add("direction_row");
+function dropDownMenuShow(menu, array, button) {
+  for (const child of menu.children) {
+    const Li = child;
+    if (child.tagName === "LI") {
+      array.push(Li);
+      child.addEventListener("click", (e) => {
+        array.forEach((element) => {
+          if (element.classList.contains("active")) {
+            element.classList.remove("active");
+          }
+          element.classList.remove("show");
+          button.classList.remove("btn_transform");
+          menu.classList.remove("direction_column");
+          menu.classList.add("direction_row");
+        });
+        Li.classList.add("active");
+        handelClick(e);
       });
-      Li.classList.add("active");
-      handelClick(e);
-    });
+    }
   }
 }
 
-function showMenuLi() {
-  parentTag.forEach((element) => {
+dropDownMenuShow(sideMenu, parentTagSec1, btnArrow);
+dropDownMenuShow(sideMenuSec2, parentTagSec2, btnArrowSec2);
+
+function showMenuLi(arrya,menu,button) {
+  console.log(menu);
+  arrya.forEach((element) => {
     element.classList.toggle("show");
   });
-  sideMenu.classList.toggle("direction_column");
-  sideMenu.classList.toggle("direction_row");
-  btnArrow.classList.toggle("btn_transform");
+  menu.classList.toggle("direction_column");
+  menu.classList.toggle("direction_row");
+  button.classList.toggle("btn_transform");
 }
 
-btnArrow.addEventListener("click", showMenuLi);
+btnArrow.addEventListener("click", () => {
+  showMenuLi(parentTagSec1,sideMenu,btnArrow);
+});
+btnArrowSec2.addEventListener("click", () => {
+  showMenuLi(parentTagSec2,sideMenuSec2,btnArrowSec2);
+});
 
 function drowContent(value) {
   if (canvas.getContext) {
