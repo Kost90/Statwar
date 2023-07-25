@@ -2,7 +2,9 @@ const wrapper = document.querySelector("#wrapper_header");
 const hamburgerOpenBtn = document.querySelector("#hamburder_menu_open_btn");
 const div = document.createElement("div");
 const p = document.createElement("p");
-const statisticContainer = document.querySelector("#statistic_container_sec2");
+const statisticContainerYear = document.querySelector("#year-statistic");
+const statisticContainerMonth = document.querySelector("#statistic_month");
+const statisticContainerWeek = document.querySelector("#statistic_week");
 const sideMenu = document.querySelector("#side_menu");
 const sideMenuSec2 = document.querySelector("#side_menu_sec2");
 const sideMenuSec3 = document.querySelector("#side_menu_sec3");
@@ -63,7 +65,21 @@ function OpenPopup(e) {
   }
 }
 
-statisticContainer.addEventListener("click", (e) => {
+statisticContainerMonth.addEventListener("click", (e) => {
+  const element = e.currentTarget;
+  const closest = element.closest("div");
+  console.log(closest);
+  OpenPopup(closest);
+});
+
+statisticContainerYear.addEventListener("click", (e) => {
+  const element = e.currentTarget;
+  const closest = element.closest("div");
+  console.log(closest);
+  OpenPopup(closest);
+});
+
+statisticContainerWeek.addEventListener("click", (e) => {
   const element = e.currentTarget;
   const closest = element.closest("div");
   console.log(closest);

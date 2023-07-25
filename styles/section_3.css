@@ -29,6 +29,7 @@
   flex-direction: column;
   align-items: center;
   gap: 14px;
+  width: 100%;
 }
 .statistic_container_sec3 li {
   list-style: none;

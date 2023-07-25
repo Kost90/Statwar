@@ -108,8 +108,9 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   gap: 23px;
+  width: 100%;
   li {
     list-style: none;
   }
