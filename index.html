@@ -12,7 +12,12 @@
     <header>
       <div class="header_wrapper" id="wrapper_header">
         <div class="Logo_mobile">
-          <img src="./styles/images/Logo_mobile.png" alt="Logo" />
+          <svg>
+            <use
+              href="./sprites.svg#Logo"
+              xlink:href="./sprites.svg#Logo"
+            ></use>
+          </svg>
         </div>
         <div class="nav_menu">
           <a href="#"
@@ -41,7 +46,7 @@
       <div class="container">
         <h1 id="h1_sec1">Прогноз втрат рф на наступні 12 місяців</h1>
         <p id="p_sec1">
-          *Прогноз розроблений на основі статистики <br />
+          *Прогноз розроблений на основі статистики 
           останніх 5 тижнів Генштабу ЗСУ
         </p>
         <div class="wrapper_sec1">
@@ -197,17 +202,21 @@
                 <p>Військові РФ</p>
               </li>
               <li>
-                <!-- <img
-                  src="./styles/images/side_bar_icons/Target_icon.svg"
-                  alt="Target_icon"
-                /> -->
+                <svg>
+                  <use
+                    href="./sprites.svg#earthtarget"
+                    xlink:href="./sprites.svg#earthtarget"
+                  ></use>
+                </svg>
                 <p>Наземні цілі</p>
               </li>
               <li>
-                <!-- <img
-                  src="./styles/images/side_bar_icons/Bpla_icon.svg"
-                  alt="Bpla_icon"
-                /> -->
+                <svg>
+                  <use
+                    href="./sprites.svg#bpla"
+                    xlink:href="./sprites.svg#bpla"
+                  ></use>
+                </svg>
                 <p>Авіація, БПЛА, ракети</p>
               </li>
               <li>
@@ -274,30 +283,36 @@
                 <p>ППО/ЗРК</p>
               </li>
               <li>
-                <!-- <img
-                  src="./styles/images/side_bar_icons/Rocket_icon.svg"
-                  alt="Rocet_icon"
-                /> -->
+                <svg>
+                  <use
+                    href="./sprites.svg#rockets"
+                    xlink:href="./sprites.svg#rockets"
+                  ></use>
+                </svg>
                 <p>Крилаті ракети</p>
               </li>
               <li>
-                <!-- <img
-                  src="./styles/images/side_bar_icons/Machine_icon.svg"
-                  alt="Machine_icon"
-                /> -->
+                <svg>
+                  <use
+                    href="./sprites.svg#jeep_machine"
+                    xlink:href="./sprites.svg#jeep_machine"
+                  ></use>
+                </svg>
                 <p>Автомобільна техніка</p>
               </li>
               <li>
-                <!-- <img
-                  src="./styles/images/side_bar_icons/Big_machine_icon.svg"
-                  alt="Big_machine_icon"
-                /> -->
+                <svg>
+                  <use
+                    href="./sprites.svg#special_machine"
+                    xlink:href="./sprites.svg#special_machine"
+                  ></use>
+                </svg>
                 <p>Спецтехніка</p>
               </li>
             </ul>
           </div>
         
-          <div class="statistic_container_sec2">
+          <div class="statistic_container_sec2" id="statistic_container_sec2">
             <div class="flex_container_sec2">
               <li id="alive" class="flex_container">
                 <img src="./styles/images/Ellipse_red.png" alt="ellipse_red" />
@@ -352,104 +367,135 @@
         <h1>Тижнева статистика</h1>
         <p>*На основі даних статистики Генштабу ЗСУ за останні 12 тижні</p>
         <div class="wrapper_sec3">
-          <ul class="side_menu_sec3" id="side_menu">
-            <li>
-              <!-- <img
-                src="./styles/images/side_bar_icons/Soldier_icon.png"
-                alt="Soldier"
-              /> -->
-              <p>Військові РФ</p>
-              <!-- <img
-                src="./styles/images/side_bar_icons/Arrow.png"
-                alt="Arrow"
-                class="arrow"
-              /> -->
-            </li>
-            <li>
-              <!-- <img
-                src="./styles/images/side_bar_icons/Target_icon.svg"
-                alt="Target_icon"
-              /> -->
-              <p>Наземні цілі</p>
-            </li>
-            <li>
-              <!-- <img
-                src="./styles/images/side_bar_icons/Bpla_icon.svg"
-                alt="Bpla_icon"
-              /> -->
-              <p>Авіація, БПЛА, ракети</p>
-            </li>
-            <li>
-              <!-- <img
-                src="./styles/images/side_bar_icons/Tank_icon.png"
-                alt="Tank"
-              /> -->
-              <p>Танки</p>
-            </li>
-            <li>
-              <!-- <img
-                src="./styles/images/side_bar_icons/Armored_machine_icon.png"
-                alt="Armored_machin"
-              /> -->
-              <p>ББМашини</p>
-            </li>
-            <li>
-              <!-- <img
-                src="./styles/images/side_bar_icons/Artyleri_icon.png"
-                alt="Artyleri"
-              /> -->
-              <p>Артилерія</p>
-            </li>
-            <li>
-              <!-- <img
-                src="./styles/images/side_bar_icons/Rszo_icon.png"
-                alt="Rszo"
-              /> -->
-              <p>РСЗВ</p>
-            </li>
-            <li>
-              <!-- <img
-                src="./styles/images/side_bar_icons/Plane_icon.png"
-                alt="Plane"
-              /> -->
-              <p>Бойові літаки</p>
-            </li>
-            <li>
-              <!-- <img
-                src="./styles/images/side_bar_icons/Helicopter_icon.png"
-                alt="Helicopter"
-              /> -->
-              <p>Гелікоптери</p>
-            </li>
-            <li>
-              <!-- <img
-                src="./styles/images/side_bar_icons/Rocet_machine_icon.png"
-                alt="Rocet_machine_icon"
-              /> -->
-              <p>ППО/ЗРК</p>
-            </li>
-            <li>
-              <!-- <img
-                src="./styles/images/side_bar_icons/Rocket_icon.svg"
-                alt="Rocet_icon"
-              /> -->
-              <p>Крилаті ракети</p>
-            </li>
-            <li>
-              <!-- <img
-                src="./styles/images/side_bar_icons/Machine_icon.svg"
-                alt="Machine_icon"
-              /> -->
-              <p>Автомобільна техніка</p>
-            </li>
-            <li>
-              <!-- <img
-                src="./styles/images/side_bar_icons/Big_machine_icon.svg"
-                alt="Big_machine_icon"
-              /> -->
-              <p>Спецтехніка</p>
-            </li>
-          </ul>
+          <div class="menu_statistic">
+            <ul class="side_menu direction_row" id="side_menu_sec3">
+              <button id="btn_arrow_sec3">
+                <svg>
+                  <use
+                    href="./sprites.svg#Arrow"
+                    xlink:href="./sprites.svg#Arrow"
+                  ></use>
+                </svg>
+              </button>
+              <li class="active">
+                <svg>
+                  <use
+                    href="./sprites.svg#Soldier"
+                    xlink:href="./sprites.svg#Soldier"
+                  ></use>
+                </svg>
+                <p>Військові РФ</p>
+              </li>
+              <li>
+                <svg>
+                  <use
+                    href="./sprites.svg#earthtarget"
+                    xlink:href="./sprites.svg#earthtarget"
+                  ></use>
+                </svg>
+                <p>Наземні цілі</p>
+              </li>
+              <li>
+                <svg>
+                  <use
+                    href="./sprites.svg#bpla"
+                    xlink:href="./sprites.svg#bpla"
+                  ></use>
+                </svg>
+                <p>Авіація, БПЛА, ракети</p>
+              </li>
+              <li>
+                <svg>
+                  <use
+                    href="./sprites.svg#Tanks"
+                    xlink:href="./sprites.svg#Tanks"
+                  ></use>
+                </svg>
+                <p>Танки</p>
+              </li>
+              <li>
+                <svg>
+                  <use
+                    href="./sprites.svg#Bmm"
+                    xlink:href="./sprites.svg#Bmm"
+                  ></use>
+                </svg>
+                <p>ББМашини</p>
+              </li>
+              <li>
+                <svg>
+                  <use
+                    href="./sprites.svg#Arta"
+                    xlink:href="./sprites.svg#Arta"
+                  ></use>
+                </svg>
+                <p>Артилерія</p>
+              </li>
+              <li>
+                <svg>
+                  <use
+                    href="./sprites.svg#Rszo"
+                    xlink:href="./sprites.svg#Rszo"
+                  ></use>
+                </svg>
+                <p>РСЗВ</p>
+              </li>
+              <li>
+                <svg>
+                  <use
+                    href="./sprites.svg#Planes"
+                    xlink:href="./sprites.svg#Planes"
+                  ></use>
+                </svg>
+                <p>Бойові літаки</p>
+              </li>
+              <li>
+                <svg>
+                  <use
+                    href="./sprites.svg#Helicopters"
+                    xlink:href="./sprites.svg#Helicopters"
+                  ></use>
+                </svg>
+                <p>Гелікоптери</p>
+              </li>
+              <li>
+                <svg>
+                  <use
+                    href="./sprites.svg#Pvo"
+                    xlink:href="./sprites.svg#Pvo"
+                  ></use>
+                </svg>
+                <p>ППО/ЗРК</p>
+              </li>
+              <li>
+                <svg>
+                  <use
+                    href="./sprites.svg#rockets"
+                    xlink:href="./sprites.svg#rockets"
+                  ></use>
+                </svg>
+                <p>Крилаті ракети</p>
+              </li>
+              <li>
+                <svg>
+                  <use
+                    href="./sprites.svg#jeep_machine"
+                    xlink:href="./sprites.svg#jeep_machine"
+                  ></use>
+                </svg>
+                <p>Автомобільна техніка</p>
+              </li>
+              <li>
+                <svg>
+                  <use
+                    href="./sprites.svg#special_machine"
+                    xlink:href="./sprites.svg#special_machine"
+                  ></use>
+                </svg>
+                <p>Спецтехніка</p>
+              </li>
+            </ul>
+          </div>
 
           <div class="statistic_container_sec3">
             <div class="flex_container_sec3">
@@ -534,7 +580,14 @@
       <div class="container">
         <div class="flex_footer">
           <div class="footer_container">
-            <img src="./styles/images/Logo_mobile.png" alt="Logo" />
+            <div class="Logo_mobile">
+              <svg>
+                <use
+                  href="./sprites.svg#Logo"
+                  xlink:href="./sprites.svg#Logo"
+                ></use>
+              </svg>
+            </div>
             <div>
               <p>Контакти:</p>
               <p>statswar@gmail.com</p>

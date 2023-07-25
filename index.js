@@ -2,15 +2,29 @@ const wrapper = document.querySelector("#wrapper_header");
 const hamburgerOpenBtn = document.querySelector("#hamburder_menu_open_btn");
 const div = document.createElement("div");
 const p = document.createElement("p");
+const statisticContainer = document.querySelector("#statistic_container_sec2");
 const sideMenu = document.querySelector("#side_menu");
 const sideMenuSec2 = document.querySelector("#side_menu_sec2");
+const sideMenuSec3 = document.querySelector("#side_menu_sec3");
 const parentTagSec1 = [];
 const parentTagSec2 = [];
+const parentTagSec3 = [];
 const canvas = document.querySelector("#ellips");
 const defaultValue = "Soldier";
 let currentValue = defaultValue;
 const btnArrow = document.querySelector("#btn_arrow");
 const btnArrowSec2 = document.querySelector("#btn_arrow_sec2");
+const btnArrowSec3 = document.querySelector("#btn_arrow_sec3");
+const popUp = document.createElement("div");
+const textcontr = document.createElement("div");
+const PopUpH = document.createElement("h2");
+PopUpH.textContent = "Загальна кількість";
+const PopupText1 = document.createElement("p");
+const PopupText2 = document.createElement("p");
+textcontr.classList.add("popuptext");
+PopupText1.textContent =
+  `*Дані загальної кількості військових засобів рф взяті з відкритих джерел “назва” та включають в себе: законсервовані на складах, включно на озброєнні, тощо.`;
+PopupText2.textContent = '**Дані кількості військових засобів, які перебували на озброєнні ЗС рф на початок повномаcштабного вторгнення взято з “назва”';
 
 function OpenHamburgermenu() {
   if (div.classList.contains("menu")) {
@@ -30,6 +44,32 @@ function OpenHamburgermenu() {
 }
 
 hamburgerOpenBtn.addEventListener("click", OpenHamburgermenu);
+
+function OpenPopup(e) {
+  if (popUp.classList.contains("popup")) {
+    popUp.classList.remove("popup");
+    popUp.remove();
+    textcontr.remove();
+    PopUpH.remove();
+    PopupText1.remove();
+    PopupText2.remove();
+  } else {
+    popUp.classList.add("popup");
+    textcontr.appendChild(PopupText1);
+    textcontr.appendChild(PopupText2);
+    popUp.appendChild(PopUpH);
+    popUp.appendChild(textcontr);
+    e.appendChild(popUp);
+  }
+}
+
+statisticContainer.addEventListener("click", (e) => {
+  const element = e.currentTarget;
+  const closest = element.closest("div");
+  console.log(closest);
+  OpenPopup(closest);
+});
+
 
 function handelClick(e) {
   const value = e.currentTarget.getAttribute("data-value");
@@ -69,8 +109,9 @@ function dropDownMenuShow(menu, array, button) {
 
 dropDownMenuShow(sideMenu, parentTagSec1, btnArrow);
 dropDownMenuShow(sideMenuSec2, parentTagSec2, btnArrowSec2);
+dropDownMenuShow(sideMenuSec3, parentTagSec3, btnArrowSec3);
 
-function showMenuLi(arrya,menu,button) {
+function showMenuLi(arrya, menu, button) {
   console.log(menu);
   arrya.forEach((element) => {
     element.classList.toggle("show");
@@ -81,10 +122,13 @@ function showMenuLi(arrya,menu,button) {
 }
 
 btnArrow.addEventListener("click", () => {
-  showMenuLi(parentTagSec1,sideMenu,btnArrow);
+  showMenuLi(parentTagSec1, sideMenu, btnArrow);
 });
 btnArrowSec2.addEventListener("click", () => {
-  showMenuLi(parentTagSec2,sideMenuSec2,btnArrowSec2);
+  showMenuLi(parentTagSec2, sideMenuSec2, btnArrowSec2);
+});
+btnArrowSec3.addEventListener("click", () => {
+  showMenuLi(parentTagSec3, sideMenuSec3, btnArrowSec3);
 });
 
 function drowContent(value) {

@@ -15,8 +15,13 @@ header{
     justify-content: space-between;
     align-items: center;
     background-color: #3B5249;
-    padding: 10px;
+    padding: 16px;
     z-index: 3;
+}
+
+.Logo_mobile{
+    width: 77px;
+    height: 33px;
 }
 
 .nav_menu{

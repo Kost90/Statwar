@@ -27,10 +27,11 @@
   width: 340px;
   padding: 14px 28px 14px 32px;
   border-radius: 1px;
-  background: var(--button, #3671E9);
+  background: var(--button, #3671e9);
   font-size: 18px;
   line-height: 27px;
   color: white;
+  cursor: pointer;
 }
 
 .flex {
