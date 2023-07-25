@@ -11,21 +11,20 @@
     <!--========================== HEADER MOBILE ===============================-->
     <header>
       <div class="header_wrapper" id="wrapper_header">
-        <div class="Logo_mobile">
-          <svg>
+          <svg class="Logo_header">
             <use
               href="./sprites.svg#Logo"
               xlink:href="./sprites.svg#Logo"
             ></use>
           </svg>
-        </div>
         <div class="nav_menu">
-          <a href="#"
+          <a href="#about_us" class="about_us">Про нас</a>
+          <a href="#" class="telegram"
             ><img
               src="./styles/images/Telegramm_logo_mobile.png"
               alt="Telegramm_logo"
           /></a>
-          <a href="#"
+          <a href="#" class="red_chrest"
             ><img
               src="./styles/images/Red_chrest_logo.png"
               alt="Red_chrest_logo"
@@ -37,6 +36,7 @@
             id="hamburder_menu_open_btn"
             class="hamburder_menu_open_btn"
           ></button>
+          <button type="button" class="donate_header"><a href="https://www.callofheart.org/" target="_blank">Задонатити</a></button>
         </div>
       </div>
     </header>
@@ -156,20 +156,35 @@
             </div>
             <div id="static_ellips">
               <img
+              class="elips_img"
                 src="./styles/images/Static_ellips.png"
                 alt="Statistic_ellips"
               />
             </div>
             <!-- <canvas id="ellips"></canvas> -->
           </div>
+          <div class="link_icons">
+            <a href="#" class="telegram"
+          >
+          <img src="./styles/images/logos_telegram.png" alt="logo_telegramm">
+        </a>
+        <a href="#" class="red_chrest"
+          ><svg>
+            <use
+              href="./sprites.svg#logo_red_chrest"
+              xlink:href="./sprites.svg#logo_red_chrest"
+            ></use>
+          </svg></a>
+          </div>
         </div>
+        
         <div id="grafic_container" class="grafic_container">
           <div id="name_container" class="flex_cont_grafic">
             <img src="./styles/images/Ellipse_purple.png" alt="Ellips_icon" />
             <p>Військові РФ</p>
           </div>
           <div id="graffic">
-            <img src="./styles/images/Grafic_sec1.png" alt="Grafic_sec1" />
+            <img class="img_graffic" src="./styles/images/Graffic_sec_1.png" alt="Grafic_sec1" />
           </div>
         </div>
       </div>
@@ -311,49 +326,67 @@
               </li>
             </ul>
           </div>
-        
-          <div class="statistic_container_sec2" id="statistic_month">
-            <div id="alive" class="flex_container">
-              <img src="./styles/images/Ellipse_red.png" alt="ellipse_red" />
-              <p>Живі</p>
-            </div>
-            <div id="dead" class="flex_container">
-              <img
-                src="./styles//images/Ellipse_black.png"
-                alt="ellipse_black"
-              />
-              <p>Мертві</p>
-            </div>
-            <div id="wounded" class="flex_container">
-              <img
-                src="./styles//images/Ellipse_blue.png"
-                alt="ellipse_blue"
-              />
-              <p>Важко поранені</p>
-            </div>
-            <div id="static_ellips">
-              <img
-                src="./styles/images/Static_ellips.png"
-                alt="Statistic_ellips"
-              />
-            </div>
-            <div id="grafic_container" class="grafic_container">
-              <div id="name_container" class="flex_cont_grafic">
-                <img
-                  src="./styles/images/Ellipse_purple.png"
-                  alt="Ellips_icon"
-                />
-                <p>Наземні цілі</p>
+          <div class="wrapper_statistic_month">
+          <div class="wrapper_elips_month">
+            <div class="statistic_container_sec2" id="statistic_month">
+              <div id="alive" class="flex_container">
+                <img src="./styles/images/Ellipse_red.png" alt="ellipse_red" />
+                <p>Живі</p>
               </div>
-              <div id="graffic">
+              <div id="dead" class="flex_container">
                 <img
-                  style="height: 137px"
-                  src="./styles/images/Grafic_sec2.png"
-                  alt="Grafic_sec1"
+                  src="./styles//images/Ellipse_black.png"
+                  alt="ellipse_black"
+                />
+                <p>Мертві</p>
+              </div>
+              <div id="wounded" class="flex_container">
+                <img
+                  src="./styles//images/Ellipse_blue.png"
+                  alt="ellipse_blue"
+                />
+                <p>Важко поранені</p>
+              </div>
+              <div id="static_ellips">
+                <img
+                class="elips_img"
+                  src="./styles/images/Static_ellips.png"
+                  alt="Statistic_ellips"
                 />
               </div>
+            </div>
+  
+            <div class="link_icons">
+              <a href="#" class="telegram"
+            >
+            <img src="./styles/images/logos_telegram.png" alt="logo_telegramm">
+          </a>
+          <a href="#" class="red_chrest"
+            ><svg>
+              <use
+                href="./sprites.svg#logo_red_chrest"
+                xlink:href="./sprites.svg#logo_red_chrest"
+              ></use>
+            </svg></a>
             </div>
           </div>
+          <div id="grafic_container" class="grafic_container">
+            <div id="name_container" class="flex_cont_grafic">
+              <img
+                src="./styles/images/Ellipse_purple.png"
+                alt="Ellips_icon"
+              />
+              <p>Наземні цілі</p>
+            </div>
+            <div id="graffic">
+              <img
+              class="img_graffic_sec2"
+                src="./styles/images/Graffic_sec2.png"
+                alt="Grafic_sec1"
+              />
+            </div>
+          </div>
+        </div>  
         </div>
       </div>
     </section>
@@ -494,48 +527,66 @@
             </ul>
           </div>
 
-          <div class="statistic_container_sec3" id="statistic_week">
-            <div id="alive" class="flex_container">
-              <img src="./styles/images/Ellipse_red.png" alt="ellipse_red" />
-              <p>Живі</p>
+
+          <div class="wrapper_statistic_week">
+            <div class="wrapper_elips_week">
+              <div class="statistic_container_sec3" id="statistic_week">
+                <div id="alive" class="flex_container">
+                  <img src="./styles/images/Ellipse_red.png" alt="ellipse_red" />
+                  <p>Живі</p>
+                </div>
+                <div id="dead" class="flex_container">
+                  <img
+                    src="./styles//images/Ellipse_black.png"
+                    alt="ellipse_black"
+                  />
+                  <p>Мертві</p>
+                </div>
+                <div id="wounded" class="flex_container">
+                  <img
+                    src="./styles//images/Ellipse_blue.png"
+                    alt="ellipse_blue"
+                  />
+                  <p>Важко поранені</p>
+                </div>
+                <li id="static_ellips" class="statistic_elips">
+                  <img
+                    class="elips_img"
+                    src="./styles/images/Static_ellips.png"
+                    alt="Statistic_ellips"
+                  />
+                </li>
             </div>
-            <div id="dead" class="flex_container">
+            <div class="link_icons">
+              <a href="#" class="telegram"
+            >
+            <img src="./styles/images/logos_telegram.png" alt="logo_telegramm">
+          </a>
+          <a href="#" class="red_chrest"
+            ><svg>
+              <use
+                href="./sprites.svg#logo_red_chrest"
+                xlink:href="./sprites.svg#logo_red_chrest"
+              ></use>
+            </svg></a>
+            </div>
+          </div>
+          <div id="grafic_container" class="grafic_container">
+            <div id="name_container" class="flex_cont_grafic">
               <img
-                src="./styles//images/Ellipse_black.png"
-                alt="ellipse_black"
+                src="./styles/images/Ellipse_purple.png"
+                alt="Ellips_icon"
               />
-              <p>Мертві</p>
+              <p>Авіація, БПЛА, ракети</p>
             </div>
-            <div id="wounded" class="flex_container">
+            <div id="graffic">
               <img
-                src="./styles//images/Ellipse_blue.png"
-                alt="ellipse_blue"
+              class="img_graffic_sec3"
+                src="./styles/images/Graffic_sec3.png"
+                alt="Grafic_sec1"
               />
-              <p>Важко поранені</p>
             </div>
-            <li id="static_ellips" class="statistic_elips">
-              <img
-                style="height: 145px"
-                src="./styles/images/Static_ellips.png"
-                alt="Statistic_ellips"
-              />
-            </li>
-            <div id="grafic_container" class="grafic_container">
-              <div id="name_container" class="flex_cont_grafic">
-                <img
-                  src="./styles/images/Ellipse_purple.png"
-                  alt="Ellips_icon"
-                />
-                <p>Авіація, БПЛА, ракети</p>
-              </div>
-              <div id="graffic">
-                <img
-                  style="height: 137px"
-                  src="./styles/images/Grafic_sec3.png"
-                  alt="Grafic_sec1"
-                />
-              </div>
-            </div>
+          </div>
           </div>
         </div>
       </div>
@@ -543,7 +594,7 @@
 
     <!-- ================================SECTION 4 ====================================== -->
 
-    <section class="sec-4">
+    <section class="sec-4" id="about_us">
       <div class="container">
         <div class="container_flex_sec_4">
           <div class="flex">
@@ -565,7 +616,7 @@
             </p>
             <p>Підтримати проект тут</p>
           </div>
-          <button type="button">Задонатити</button>
+          <button type="button"><a href="https://www.callofheart.org/" target="_blank">Задонатити</a></button>
         </div>
       </div>
     </section>
@@ -575,14 +626,12 @@
       <div class="container">
         <div class="flex_footer">
           <div class="footer_container">
-            <div class="Logo_mobile">
-              <svg>
+              <svg class="logo_footer">
                 <use
                   href="./sprites.svg#Logo"
                   xlink:href="./sprites.svg#Logo"
                 ></use>
               </svg>
-            </div>
             <div>
               <p>Контакти:</p>
               <p>statswar@gmail.com</p>

@@ -47,4 +47,60 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 23px;
+}
+
+.img_graffic_sec3 {
+  width: 340px;
+  height: 129px;
+}
+
+@media (min-width: 768px) {
+  .sec-3 h1 {
+    font-size: 30px;
+    line-height: 37.866px;
+  }
+  .sec-3 p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .wrapper_sec3 {
+    flex-direction: row;
+    gap: 40px;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  #btn_arrow_sec3 {
+    display: none;
+  }
+  .wrapper_statistic_week {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .wrapper_elips_week {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 121px;
+  }
+  .statistic_container_sec3 {
+    align-items: flex-start;
+    width: 238px;
+  }
+  .statistic_container_sec3 img {
+    width: 20px;
+    height: 20px;
+  }
+  .statistic_container_sec3 p {
+    font-size: 26px;
+    line-height: 40px;
+  }
+  .statistic_container_sec3 .elips_img {
+    width: 200px;
+    height: 200px;
+  }
+  .img_graffic_sec3 {
+    width: 506px;
+    height: 192px;
+  }
 }/*# sourceMappingURL=section_3.css.map */

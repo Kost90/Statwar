@@ -1,99 +1,157 @@
 /* ==================MOBILE HEADER ====================================*/
-header{
-    position: relative;
-    height: 66px;
+header {
+  position: relative;
+  height: 66px;
 }
 
-.body_hamburger_open{
-    background: rgba(0, 0, 0, 0.5);
+.body_hamburger_open {
+  background: rgba(0, 0, 0, 0.5);
 }
 
-.header_wrapper{
-    /* position: fixed; */
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #3B5249;
-    padding: 16px;
-    z-index: 3;
+.header_wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3b5249;
+  padding: 16px;
+  z-index: 3;
 }
 
-.Logo_mobile{
-    width: 77px;
-    height: 33px;
+.Logo_header {
+  width: 77px;
+  height: 33px;
 }
 
-.nav_menu{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 11px;
+.nav_menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 11px;
 }
 
-.nav_menu a{
-    display: flex;
+.nav_menu a {
+  display: flex;
 }
 
-.nav_menu button{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #FFFFFF;
-    background-color: #3B5249;
+.nav_menu button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  background-color: #3b5249;
 }
 
-#En{
+.nav_menu .about_us {
+  display: none;
+}
+
+#En {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 1px 7px;
+}
+
+#Ua {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 1px 7px;
+}
+
+.hamburder_menu_open_btn {
+  z-index: 6;
+  width: 32px;
+  height: 21px;
+  background-image: url("./images/Hamburger_menu_open_btn.png");
+  cursor: pointer;
+}
+
+.nav_menu .hamburder_menu_close_btn {
+  z-index: 6;
+  width: 24px;
+  height: 24px;
+  background-image: url("./images/Close_hamburger_menu_btn.png");
+  background-color: rgba(255, 255, 255, 0.95);
+  cursor: pointer;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 211px;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid #000000;
+  z-index: 5;
+}
+
+.nav_menu .donate_header {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  
+.Logo_header{
+  width: 159px;
+  height: 43px;
+}
+
+  .nav_menu .hamburder_menu_open_btn {
+    display: none;
+  }
+
+  .nav_menu button {
+    width: 74px;
+    height: 44px;
+  }
+
+  .nav_menu .about_us {
+    display: inline-block;
+    color: #fff;
+    font-size: 18px;
+  }
+
+  .nav_menu .telegram {
+    display: none;
+  }
+
+  .nav_menu .red_chrest {
+    display: none;
+  }
+
+  #En {
+    font-size: 18px;
+  }
+
+  #Ua {
+    font-size: 18px;
+  }
+
+  .nav_menu .donate_header {
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 35px;
-    height: 20px;
-    border: 1px solid #FFFFFF;
-    border-radius: 20px;
-    font-size: 16px;
-    line-height: 19px;  
-}
-
-#Ua{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 35px;
-    height: 20px;
-    border: 1px solid #FFFFFF;
-    border-radius: 20px;
-    font-size: 16px;
-    line-height: 19px;
-}
-
-.hamburder_menu_open_btn{
-    z-index: 6;
-    width: 32px;
-    height: 21px;
-    background-image: url("./images/Hamburger_menu_open_btn.png");
+    width: 172px;
+    height: 55px;
+    padding: 14px 32px 14px 32px;
+    border-radius: 1px;
+    background: var(--button, #3671e9);
+    font-size: 18px;
+    line-height: 27px;
+    color: white;
     cursor: pointer;
-}
-
-.nav_menu .hamburder_menu_close_btn{
-    z-index: 6;
-    width: 24px;
-    height: 24px;
-    background-image: url("./images/Close_hamburger_menu_btn.png");
-    background-color:  rgba(255, 255, 255, 0.95);
-    cursor: pointer;
-}
-
-.menu{
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 211px;
-    background: rgba(255, 255, 255, 0.95);
-    border: 1px solid #000000;
-    z-index: 5;
+  }
 }
