@@ -23,6 +23,10 @@
   padding-bottom: 17px;
 }
 
+.wrapper_statistic_week {
+  width: 100%;
+}
+
 .statistic_container_sec3 {
   position: relative;
   display: flex;

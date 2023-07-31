@@ -20,15 +20,21 @@
         <div class="nav_menu">
           <a href="#about_us" class="about_us">Про нас</a>
           <a href="#" class="telegram"
-            ><img
-              src="./styles/images/Telegramm_logo_mobile.png"
+            >
+            <img
+              style="height: 22px; width: 22px;"
+              src="./styles/images/logos_telegram.png"
               alt="Telegramm_logo"
-          /></a>
-          <a href="#" class="red_chrest"
-            ><img
-              src="./styles/images/Red_chrest_logo.png"
-              alt="Red_chrest_logo"
-          /></a>
+          />
+        </a>
+          <a href="#" class="red_chrest">
+            <svg style="height: 22px; width: 22px;">
+              <use
+                href="./sprites.svg#logo_red_chrest_mobile"
+                xlink:href="./sprites.svg#logo_red_chrest_mobile"
+              ></use>
+            </svg>
+        </a>
           <button type="button" id="En">En</button>
           <button type="button" id="Ua">Ua</button>
           <button
@@ -137,26 +143,44 @@
 
           <div class="statistic_container" id="year-statistic">
             <div id="alive" class="flex_container">
-              <img src="./styles/images/Ellipse_red.png" alt="ellipse_red" />
+
+              <svg style="height: 12px; width: 12px">
+                <use
+                  href="./sprites.svg#ellips_alive"
+                  xlink:href="./sprites.svg#ellips_alive"
+                ></use>
+              </svg>
+
               <p>Живі</p>
             </div>
+
             <div id="dead" class="flex_container">
-              <img
-                src="./styles//images/Ellipse_black.png"
-                alt="ellipse_black"
-              />
+
+              <svg style="height: 12px; width: 12px">
+                <use
+                  href="./sprites.svg#ellips_dead"
+                  xlink:href="./sprites.svg#ellips_dead"
+                ></use>
+              </svg>
+
               <p>Мертві</p>
             </div>
+
             <div id="wounded" class="flex_container">
-              <img
-                src="./styles//images/Ellipse_blue.png"
-                alt="ellipse_blue"
-              />
+
+              <svg style="height: 12px; width: 12px">
+                <use
+                  href="./sprites.svg#ellips_hard_shut"
+                  xlink:href="./sprites.svg#ellips_hard_shut"
+                ></use>
+              </svg>
+
               <p>Важко поранені</p>
             </div>
-            <div id="static_ellips">
+
+            <div id="static_ellips_year">
               <img
-              class="elips_img"
+                class="elips_img"
                 src="./styles/images/Static_ellips.png"
                 alt="Statistic_ellips"
               />
@@ -179,8 +203,17 @@
         </div>
         
         <div id="grafic_container" class="grafic_container">
+
           <div id="name_container" class="flex_cont_grafic">
-            <img src="./styles/images/Ellipse_purple.png" alt="Ellips_icon" />
+
+            <svg style="height: 12px; width: 12px">
+              <use
+                href="./sprites.svg#ellips_soldiers_rf"
+                xlink:href="./sprites.svg#ellips_soldiers_rf"
+              ></use>
+            </svg>
+
+
             <p>Військові РФ</p>
           </div>
           <div id="graffic">
@@ -330,24 +363,33 @@
           <div class="wrapper_elips_month">
             <div class="statistic_container_sec2" id="statistic_month">
               <div id="alive" class="flex_container">
-                <img src="./styles/images/Ellipse_red.png" alt="ellipse_red" />
+                <svg style="height: 12px; width: 12px">
+                  <use
+                    href="./sprites.svg#ellips_alive"
+                    xlink:href="./sprites.svg#ellips_alive"
+                  ></use>
+                </svg>
                 <p>Живі</p>
               </div>
               <div id="dead" class="flex_container">
-                <img
-                  src="./styles//images/Ellipse_black.png"
-                  alt="ellipse_black"
-                />
+                <svg style="height: 12px; width: 12px">
+                  <use
+                    href="./sprites.svg#ellips_dead"
+                    xlink:href="./sprites.svg#ellips_dead"
+                  ></use>
+                </svg>
                 <p>Мертві</p>
               </div>
               <div id="wounded" class="flex_container">
-                <img
-                  src="./styles//images/Ellipse_blue.png"
-                  alt="ellipse_blue"
-                />
+                <svg style="height: 12px; width: 12px">
+                  <use
+                    href="./sprites.svg#ellips_hard_shut"
+                    xlink:href="./sprites.svg#ellips_hard_shut"
+                  ></use>
+                </svg>
                 <p>Важко поранені</p>
               </div>
-              <div id="static_ellips">
+              <div id="static_ellips_month">
                 <img
                 class="elips_img"
                   src="./styles/images/Static_ellips.png"
@@ -372,10 +414,12 @@
           </div>
           <div id="grafic_container" class="grafic_container">
             <div id="name_container" class="flex_cont_grafic">
-              <img
-                src="./styles/images/Ellipse_purple.png"
-                alt="Ellips_icon"
-              />
+              <svg style="height: 12px; width: 12px">
+                <use
+                  href="./sprites.svg#ellips_earth_targets"
+                  xlink:href="./sprites.svg#ellips_earth_targets"
+                ></use>
+              </svg>
               <p>Наземні цілі</p>
             </div>
             <div id="graffic">
@@ -532,24 +576,33 @@
             <div class="wrapper_elips_week">
               <div class="statistic_container_sec3" id="statistic_week">
                 <div id="alive" class="flex_container">
-                  <img src="./styles/images/Ellipse_red.png" alt="ellipse_red" />
+                  <svg style="height: 12px; width: 12px">
+                    <use
+                      href="./sprites.svg#ellips_alive"
+                      xlink:href="./sprites.svg#ellips_alive"
+                    ></use>
+                  </svg>
                   <p>Живі</p>
                 </div>
                 <div id="dead" class="flex_container">
-                  <img
-                    src="./styles//images/Ellipse_black.png"
-                    alt="ellipse_black"
-                  />
+                  <svg style="height: 12px; width: 12px">
+                    <use
+                      href="./sprites.svg#ellips_dead"
+                      xlink:href="./sprites.svg#ellips_dead"
+                    ></use>
+                  </svg>
                   <p>Мертві</p>
                 </div>
                 <div id="wounded" class="flex_container">
-                  <img
-                    src="./styles//images/Ellipse_blue.png"
-                    alt="ellipse_blue"
-                  />
+                  <svg style="height: 12px; width: 12px">
+                    <use
+                      href="./sprites.svg#ellips_hard_shut"
+                      xlink:href="./sprites.svg#ellips_hard_shut"
+                    ></use>
+                  </svg>
                   <p>Важко поранені</p>
                 </div>
-                <li id="static_ellips" class="statistic_elips">
+                <li id="static_ellips_week" class="statistic_elips">
                   <img
                     class="elips_img"
                     src="./styles/images/Static_ellips.png"
@@ -573,10 +626,12 @@
           </div>
           <div id="grafic_container" class="grafic_container">
             <div id="name_container" class="flex_cont_grafic">
-              <img
-                src="./styles/images/Ellipse_purple.png"
-                alt="Ellips_icon"
-              />
+              <svg style="height: 12px; width: 12px">
+                <use
+                  href="./sprites.svg#ellips_aviations"
+                  xlink:href="./sprites.svg#ellips_aviations"
+                ></use>
+              </svg>
               <p>Авіація, БПЛА, ракети</p>
             </div>
             <div id="graffic">

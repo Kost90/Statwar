@@ -23,6 +23,10 @@
   padding-bottom: 17px;
 }
 
+.wrapper_statistic_month {
+  width: 100%;
+}
+
 .statistic_container_sec2 {
   position: relative;
   display: flex;
