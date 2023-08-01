@@ -23,7 +23,7 @@ const popUp = document.createElement("div");
 const textcontr = document.createElement("div");
 const PopUpH = document.createElement("h2");
 const closeImg = document.createElement("img");
-closeImg.setAttribute('src', './styles/images/Close_hamburger_menu_btn.png')
+closeImg.setAttribute('src', './styles/images/Close_btn.png')
 const closePopupBtn = document.createElement("button");
 closePopupBtn.setAttribute('type','button');
 const popUpDivContainer = document.createElement("div");
