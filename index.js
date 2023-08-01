@@ -83,24 +83,24 @@ statisticContainerWeek.addEventListener("click", (e) => {
 });
 // =================================================================================
 
-function OpenHamburgermenu() {
-  if (div.classList.contains("menu")) {
-    p.remove();
-    div.classList.remove("menu");
-    div.remove();
-    hamburgerOpenBtn.classList.toggle("hamburder_menu_close_btn");
-    document.body.classList.toggle("body_hamburger_open");
-  } else {
-    div.classList.add("menu");
-    p.textContent = "Упс, це меню ще очікує наповнення.";
-    div.appendChild(p);
-    wrapper.appendChild(div);
-    hamburgerOpenBtn.classList.toggle("hamburder_menu_close_btn");
-    document.body.classList.toggle("body_hamburger_open");
-  }
-}
+// function OpenHamburgermenu() {
+//   if (div.classList.contains("menu")) {
+//     p.remove();
+//     div.classList.remove("menu");
+//     div.remove();
+//     hamburgerOpenBtn.classList.toggle("hamburder_menu_close_btn");
+//     document.body.classList.toggle("body_hamburger_open");
+//   } else {
+//     div.classList.add("menu");
+//     p.textContent = "Упс, це меню ще очікує наповнення.";
+//     div.appendChild(p);
+//     wrapper.appendChild(div);
+//     hamburgerOpenBtn.classList.toggle("hamburder_menu_close_btn");
+//     document.body.classList.toggle("body_hamburger_open");
+//   }
+// }
 
-hamburgerOpenBtn.addEventListener("click", OpenHamburgermenu);
+// hamburgerOpenBtn.addEventListener("click", OpenHamburgermenu);
 
 
 function handelClick(e) {
