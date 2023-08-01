@@ -44,7 +44,7 @@
 .menu_statistic .btn_transform {
   transform: rotate(180deg);
   border-bottom: 1px solid black;
-  background-color: #FFF;
+  background-color: #fff;
 }
 
 .side_menu {
@@ -76,7 +76,7 @@
   align-items: center;
   gap: 6px;
   border: 1px solid black;
-  background-color: #FFF;
+  background-color: #fff;
 }
 .side_menu .show:hover {
   background-color: #77995d;
@@ -99,7 +99,7 @@
 
 .flex_container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   gap: 9px;
 }
@@ -107,10 +107,11 @@
 .statistic_container {
   position: relative;
   display: flex;
-  flex-direction: column;
+  flex-direction: row-reverse;
   align-items: center;
   gap: 23px;
   width: 100%;
+  justify-content: space-between;
 }
 .statistic_container li {
   list-style: none;
@@ -120,11 +121,19 @@
   line-height: 6.4px;
 }
 
+.container_text_statistic {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .grafic_container {
   display: flex;
   flex-direction: column;
   padding-bottom: 30px;
-  align-items: center;
+  align-items: flex-start;
+  gap: 10px;
 }
 
 .flex_cont_grafic {
@@ -165,7 +174,7 @@
     border: none;
   }
   .side_menu .active {
-    background-color: #FFF;
+    background-color: #fff;
   }
   .side_menu li {
     display: flex;
@@ -176,7 +185,7 @@
     border: none;
   }
   .side_menu li:hover {
-    background-color: #FFF;
+    background-color: #fff;
   }
   .menu_statistic {
     display: flex;

@@ -30,10 +30,12 @@
 .statistic_container_sec2 {
   position: relative;
   display: flex;
-  flex-direction: column;
+  flex-direction: row-reverse;
   align-items: center;
-  gap: 14px;
+  gap: 23px;
   width: 100%;
+  justify-content: space-between;
+  padding-bottom: 17px;
 }
 .statistic_container_sec2 li {
   list-style: none;
