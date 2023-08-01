@@ -34,7 +34,6 @@ PopupText1.textContent =
 PopupText2.textContent = '**Дані кількості військових засобів, які перебували на озброєнні ЗС рф на початок повномаcштабного вторгнення взято з “назва”';
 
 function OpenPopup(e) {
-    popUp.classList.add("popup");
     closePopupBtn.appendChild(closeImg);
     popUpDivContainer.appendChild(PopUpH);
     popUpDivContainer.appendChild(closePopupBtn);
@@ -48,6 +47,7 @@ function OpenPopup(e) {
 closePopupBtn.addEventListener('click', (e) => {
   e.stopPropagation();
     popUp.classList.remove("popup");
+    popUp.classList.remove("popup_sec2_sec3");
     popUp.remove();
     popUpDivContainer.remove();
     textcontr.remove();
@@ -59,24 +59,54 @@ closePopupBtn.addEventListener('click', (e) => {
 });
 
 statisticContainerMonth.addEventListener("click", (e) => {
-  const element = e.currentTarget;
-  const closest = element.closest("div");
-  console.log(closest);
-  OpenPopup(closest);
+  if(popUp.classList.contains("popup")){
+    popUp.classList.remove("popup");
+    popUp.classList.add("popup_sec2_sec3");
+    const element = e.currentTarget;
+    const closest = element.closest("div");
+    console.log(closest);
+    OpenPopup(closest);
+  } else{
+    popUp.classList.add("popup_sec2_sec3");
+    const element = e.currentTarget;
+    const closest = element.closest("div");
+    console.log(closest);
+    OpenPopup(closest);
+  }
 });
 
 statisticContainerYear.addEventListener("click", (e) => {
-  const element = e.currentTarget;
-  const closest = element.closest("div");
-  console.log(closest);
-  OpenPopup(closest);
+  if(popUp.classList.contains("popup_sec2_sec3")){
+    popUp.classList.remove("popup_sec2_sec3");
+    popUp.classList.add("popup");
+    const element = e.currentTarget;
+    const closest = element.closest("div");
+    console.log(closest);
+    OpenPopup(closest);
+  } else{
+    popUp.classList.add("popup");
+    const element = e.currentTarget;
+    const closest = element.closest("div");
+    console.log(closest);
+    OpenPopup(closest);
+  }
 });
 
 statisticContainerWeek.addEventListener("click", (e) => {
-  const element = e.currentTarget;
-  const closest = element.closest("div");
-  console.log(closest);
-  OpenPopup(closest);
+  if(popUp.classList.contains("popup")){
+    popUp.classList.remove("popup");
+    popUp.classList.add("popup_sec2_sec3");
+    const element = e.currentTarget;
+    const closest = element.closest("div");
+    console.log(closest);
+    OpenPopup(closest);
+  } else{
+    popUp.classList.add("popup_sec2_sec3");
+    const element = e.currentTarget;
+    const closest = element.closest("div");
+    console.log(closest);
+    OpenPopup(closest);
+  }
 });
 // =================================================================================
 
