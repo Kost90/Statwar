@@ -97,12 +97,13 @@
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    gap: 121px;
+    justify-content: space-around;
   }
 
   .statistic_container_sec2{
     align-items: flex-start;
     width: 238px;
+    flex-direction: column;
     img{
       width: 20px;
       height: 20px;
