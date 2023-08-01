@@ -4,10 +4,6 @@ header {
   height: 66px;
 }
 
-.body_hamburger_open {
-  background: rgba(0, 0, 0, 0.5);
-}
-
 .header_wrapper {
   width: 100%;
   display: flex;
@@ -66,37 +62,6 @@ header {
   font-size: 16px;
   line-height: 19px;
   padding: 1px 7px;
-}
-
-.hamburder_menu_open_btn {
-  z-index: 6;
-  width: 32px;
-  height: 21px;
-  background-image: url("./images/Hamburger_menu_open_btn.png");
-  cursor: pointer;
-}
-
-.nav_menu .hamburder_menu_close_btn {
-  z-index: 6;
-  width: 24px;
-  height: 24px;
-  background-image: url("./images/Close_hamburger_menu_btn.png");
-  background-color: rgba(255, 255, 255, 0.95);
-  cursor: pointer;
-}
-
-.menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 211px;
-  background: rgba(255, 255, 255, 0.95);
-  border: 1px solid #000000;
-  z-index: 5;
 }
 
 .nav_menu .donate_header {
