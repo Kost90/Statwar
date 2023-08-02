@@ -133,3 +133,9 @@ svg{
       }
 
 }
+
+@media (min-width:1920px){
+    .container{
+        padding: 0 118px;
+    }
+}

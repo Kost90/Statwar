@@ -34,6 +34,10 @@
   cursor: pointer;
 }
 
+.Img_sec4_desc {
+  display: none;
+}
+
 .flex {
   display: flex;
   justify-content: flex-start;
@@ -57,5 +61,16 @@
   .container_flex_sec_4 p {
     font-size: 22px;
     line-height: 33px;
+  }
+}
+@media (min-width: 1920px) {
+  .sec-4 {
+    background-color: #D9D9D9;
+  }
+  .container_flex_sec_4 {
+    flex-direction: row;
+  }
+  .Img_sec4_desc {
+    display: block;
   }
 }/*# sourceMappingURL=section_4.css.map */
