@@ -3,102 +3,45 @@ const statisticContainerMonth = document.querySelector("#static_ellips_month");
 const statisticContainerWeek = document.querySelector("#static_ellips_week");
 
 // ============================= PopUP=====================================
+const PopSec1 = document.querySelector("#popup_sec1");
+const PopSec2 = document.querySelector("#popup_sec2");
+const PopSec3 = document.querySelector("#popup_sec3");
+const closePopupBtnSec1 = document.querySelector("#close_popup");
+const closePopupBtnSec2 = document.querySelector("#close_popup_sec2");
+const closePopupBtnSec3 = document.querySelector("#close_popup_sec3");
 
-const popUp = document.createElement("div");
-const textcontr = document.createElement("div");
-const PopUpH = document.createElement("h2");
-const closeImg = document.createElement("img");
-closeImg.setAttribute('src', './styles/images/Close_btn.png')
-const closePopupBtn = document.createElement("button");
-closePopupBtn.setAttribute('type','button');
-const popUpDivContainer = document.createElement("div");
-popUpDivContainer.classList.add('flexPopup')
-PopUpH.textContent = "Загальна кількість";
-const PopupText1 = document.createElement("p");
-const PopupText2 = document.createElement("p");
-textcontr.classList.add("popuptext");
-PopupText1.textContent =
-  `*Дані загальної кількості військових засобів рф взяті з відкритих джерел “назва” та включають в себе: законсервовані на складах, включно на озброєнні, тощо.`;
-PopupText2.textContent = '**Дані кількості військових засобів, які перебували на озброєнні ЗС рф на початок повномаcштабного вторгнення взято з “назва”';
+closePopupBtnSec1.addEventListener("click", (e) => {
+  PopSec1.classList.remove("show_popup");
+  document.body.classList.remove("body_shadow");
+});
 
-function OpenPopup(e) {
-    closePopupBtn.appendChild(closeImg);
-    popUpDivContainer.appendChild(PopUpH);
-    popUpDivContainer.appendChild(closePopupBtn);
-    textcontr.appendChild(PopupText1);
-    textcontr.appendChild(PopupText2);
-    popUp.appendChild(popUpDivContainer);
-    popUp.appendChild(textcontr);
-    e.appendChild(popUp);
-}
+closePopupBtnSec2.addEventListener("click", (e) => {
+  PopSec2.classList.remove("show_popup");
+  document.body.classList.remove("body_shadow");
+});
 
-closePopupBtn.addEventListener('click', (e) => {
-  e.stopPropagation();
-    popUp.classList.remove("popup");
-    popUp.classList.remove("popup_sec2_sec3");
-    popUp.remove();
-    popUpDivContainer.remove();
-    textcontr.remove();
-    PopUpH.remove();
-    PopupText1.remove();
-    PopupText2.remove();
-    closeImg.remove();
-    closePopupBtn.remove();
+closePopupBtnSec3.addEventListener("click", (e) => {
+  PopSec3.classList.remove("show_popup");
+  document.body.classList.remove("body_shadow");
 });
 
 statisticContainerMonth.addEventListener("click", (e) => {
-  if(popUp.classList.contains("popup")){
-    popUp.classList.remove("popup");
-    popUp.classList.add("popup_sec2_sec3");
-    const element = e.currentTarget;
-    const closest = element.closest("div");
-    console.log(closest);
-    OpenPopup(closest);
-  } else{
-    popUp.classList.add("popup_sec2_sec3");
-    const element = e.currentTarget;
-    const closest = element.closest("div");
-    console.log(closest);
-    OpenPopup(closest);
-  }
+  PopSec2.classList.add("show_popup");
+  document.body.classList.add("body_shadow");
 });
 
 statisticContainerYear.addEventListener("click", (e) => {
-  if(popUp.classList.contains("popup_sec2_sec3")){
-    popUp.classList.remove("popup_sec2_sec3");
-    popUp.classList.add("popup");
-    const element = e.currentTarget;
-    const closest = element.closest("div");
-    console.log(closest);
-    OpenPopup(closest);
-  } else{
-    popUp.classList.add("popup");
-    const element = e.currentTarget;
-    const closest = element.closest("div");
-    console.log(closest);
-    OpenPopup(closest);
-  }
+  PopSec1.classList.add("show_popup");
+  document.body.classList.add("body_shadow");
 });
 
 statisticContainerWeek.addEventListener("click", (e) => {
-  if(popUp.classList.contains("popup")){
-    popUp.classList.remove("popup");
-    popUp.classList.add("popup_sec2_sec3");
-    const element = e.currentTarget;
-    const closest = element.closest("div");
-    console.log(closest);
-    OpenPopup(closest);
-  } else{
-    popUp.classList.add("popup_sec2_sec3");
-    const element = e.currentTarget;
-    const closest = element.closest("div");
-    console.log(closest);
-    OpenPopup(closest);
-  }
+  PopSec3.classList.add("show_popup");
+  document.body.classList.add("body_shadow");
 });
 // =================================================================================
 
-// For canvas==========================================================
+// =========================For canvas==========================================================
 const canvas = document.querySelector("#ellips");
 const defaultValue = "Soldier";
 let currentValue = defaultValue;
@@ -186,4 +129,3 @@ btnArrowSec2.addEventListener("click", () => {
 btnArrowSec3.addEventListener("click", () => {
   showMenuLi(parentTagSec3, sideMenuSec3, btnArrowSec3);
 });
-

@@ -156,6 +156,10 @@
   display: none;
 }
 
+.ellips_year {
+  position: relative;
+}
+
 @media (min-width: 768px) {
   .sec-1 h1 {
     font-size: 30px;
