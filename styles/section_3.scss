@@ -119,3 +119,24 @@
     height: 192px;
   }
 }
+
+@media (min-width:1920px){
+  .sec-3{
+    text-align: center;
+    h1 {
+      font-size: 40px;
+      line-height: 37px;
+    }
+    p {
+      font-size: 26px;
+      line-height: 40px;
+      padding-bottom: 0;
+    }
+  }
+
+  .wrapper_sec3{
+    align-items: flex-end;
+    padding-bottom: 130px;
+    gap: 5px;
+  }
+}

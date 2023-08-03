@@ -36,6 +36,12 @@ header {
   align-items: center;
   color: #ffffff;
   background-color: #3b5249;
+  cursor: pointer;
+}
+
+.nav_menu button:hover{
+  color:black;
+  background-color: #ffffff;
 }
 
 .nav_menu .about_us {

@@ -8,36 +8,36 @@
     <title>STAT WAR</title>
   </head>
   <body>
-    <!--========================== HEADER MOBILE ===============================-->
+    <!--========================== HEADER ===============================-->
     <header>
       <div class="header_wrapper" id="wrapper_header">
-          <svg class="Logo_header">
-            <use
-              href="./sprites.svg#Logo"
-              xlink:href="./sprites.svg#Logo"
-            ></use>
-          </svg>
+        <svg class="Logo_header">
+          <use href="./sprites.svg#Logo" xlink:href="./sprites.svg#Logo"></use>
+        </svg>
         <div class="nav_menu">
           <a href="#about_us" class="about_us">Про нас</a>
-          <a href="#" class="telegram"
-            >
+          <a href="#" class="telegram">
             <img
-              style="height: 22px; width: 22px;"
+              style="height: 22px; width: 22px"
               src="./styles/images/logos_telegram.png"
               alt="Telegramm_logo"
-          />
-        </a>
+            />
+          </a>
           <a href="#" class="red_chrest">
-            <svg style="height: 22px; width: 22px;">
+            <svg style="height: 22px; width: 22px">
               <use
                 href="./sprites.svg#logo_red_chrest_mobile"
                 xlink:href="./sprites.svg#logo_red_chrest_mobile"
               ></use>
             </svg>
-        </a>
+          </a>
           <button type="button" id="En">En</button>
           <button type="button" id="Ua">Ua</button>
-          <button type="button" class="donate_header"><a href="https://www.callofheart.org/" target="_blank">Задонатити</a></button>
+          <button type="button" class="donate_header">
+            <a href="https://www.callofheart.org/" target="_blank"
+              >Задонатити</a
+            >
+          </button>
         </div>
       </div>
     </header>
@@ -47,8 +47,8 @@
       <div class="container">
         <h1 id="h1_sec1">Прогноз втрат рф на наступні 12 місяців</h1>
         <p id="p_sec1">
-          *Прогноз розроблений на основі статистики 
-          останніх 5 тижнів Генштабу ЗСУ
+          *Прогноз розроблений на основі статистики останніх 5 тижнів Генштабу
+          ЗСУ
         </p>
         <div class="wrapper_sec1">
           <div class="menu_statistic">
@@ -137,38 +137,36 @@
           </div>
 
           <div class="statistic_container" id="year-statistic">
-
             <div class="container_text_statistic">
+              <div id="alive" class="flex_container">
+                <svg style="height: 12px; width: 12px">
+                  <use
+                    href="./sprites.svg#ellips_alive"
+                    xlink:href="./sprites.svg#ellips_alive"
+                  ></use>
+                </svg>
+                <p>Живі</p>
+              </div>
 
-            <div id="alive" class="flex_container">
-              <svg style="height: 12px; width: 12px">
-                <use
-                  href="./sprites.svg#ellips_alive"
-                  xlink:href="./sprites.svg#ellips_alive"
-                ></use>
-              </svg>
-              <p>Живі</p>
-            </div>
+              <div id="dead" class="flex_container">
+                <svg style="height: 12px; width: 12px">
+                  <use
+                    href="./sprites.svg#ellips_dead"
+                    xlink:href="./sprites.svg#ellips_dead"
+                  ></use>
+                </svg>
+                <p>Мертві</p>
+              </div>
 
-            <div id="dead" class="flex_container">
-              <svg style="height: 12px; width: 12px">
-                <use
-                  href="./sprites.svg#ellips_dead"
-                  xlink:href="./sprites.svg#ellips_dead"
-                ></use>
-              </svg>
-              <p>Мертві</p>
-            </div>
-
-            <div id="wounded" class="flex_container">
-              <svg style="height: 12px; width: 12px">
-                <use
-                  href="./sprites.svg#ellips_hard_shut"
-                  xlink:href="./sprites.svg#ellips_hard_shut"
-                ></use>
-              </svg>
-              <p>Важко поранені</p>
-            </div>
+              <div id="wounded" class="flex_container">
+                <svg style="height: 12px; width: 12px">
+                  <use
+                    href="./sprites.svg#ellips_hard_shut"
+                    xlink:href="./sprites.svg#ellips_hard_shut"
+                  ></use>
+                </svg>
+                <p>Важко поранені</p>
+              </div>
             </div>
 
             <div id="static_ellips_year">
@@ -179,49 +177,48 @@
               />
             </div>
 
-            
             <!-- <canvas id="ellips"></canvas> -->
           </div>
 
           <div id="grafic_container" class="grafic_container_desctope">
-
             <div id="name_container" class="flex_cont_grafic">
-  
               <svg style="height: 12px; width: 12px">
                 <use
                   href="./sprites.svg#ellips_soldiers_rf"
                   xlink:href="./sprites.svg#ellips_soldiers_rf"
                 ></use>
               </svg>
-  
-  
+
               <p>Військові РФ</p>
             </div>
             <div id="graffic">
-              <img class="img_graffic" src="./styles/images/Graffic_sec_1.png" alt="Grafic_sec1" />
+              <img
+                class="img_graffic"
+                src="./styles/images/Graffic_sec_1.png"
+                alt="Grafic_sec1"
+              />
             </div>
           </div>
 
           <div class="link_icons">
-            <a href="#" class="telegram"
-          >
-          <img src="./styles/images/logos_telegram.png" alt="logo_telegramm">
-        </a>
-        <a href="#" class="red_chrest"
-          ><svg>
-            <use
-              href="./sprites.svg#logo_red_chrest"
-              xlink:href="./sprites.svg#logo_red_chrest"
-            ></use>
-          </svg></a>
+            <a href="#" class="telegram">
+              <img
+                src="./styles/images/logos_telegram.png"
+                alt="logo_telegramm"
+              />
+            </a>
+            <a href="#" class="red_chrest"
+              ><svg>
+                <use
+                  href="./sprites.svg#logo_red_chrest"
+                  xlink:href="./sprites.svg#logo_red_chrest"
+                ></use></svg
+            ></a>
           </div>
         </div>
 
-        
         <div id="grafic_container" class="grafic_container">
-
           <div id="name_container" class="flex_cont_grafic">
-
             <svg style="height: 12px; width: 12px">
               <use
                 href="./sprites.svg#ellips_soldiers_rf"
@@ -229,11 +226,14 @@
               ></use>
             </svg>
 
-
             <p>Військові РФ</p>
           </div>
           <div id="graffic">
-            <img class="img_graffic" src="./styles/images/Graffic_sec_1.png" alt="Grafic_sec1" />
+            <img
+              class="img_graffic"
+              src="./styles/images/Graffic_sec_1.png"
+              alt="Grafic_sec1"
+            />
           </div>
         </div>
       </div>
@@ -376,50 +376,83 @@
             </ul>
           </div>
           <div class="wrapper_statistic_month">
-          <div class="wrapper_elips_month">
-            <div class="statistic_container_sec2" id="statistic_month">
+            <div class="wrapper_elips_month">
+              <div class="statistic_container_sec2" id="statistic_month">
+                <div class="container_text_statistic">
+                  <div id="alive" class="flex_container">
+                    <svg style="height: 12px; width: 12px">
+                      <use
+                        href="./sprites.svg#ellips_alive"
+                        xlink:href="./sprites.svg#ellips_alive"
+                      ></use>
+                    </svg>
+                    <p>Живі</p>
+                  </div>
+                  <div id="dead" class="flex_container">
+                    <svg style="height: 12px; width: 12px">
+                      <use
+                        href="./sprites.svg#ellips_dead"
+                        xlink:href="./sprites.svg#ellips_dead"
+                      ></use>
+                    </svg>
+                    <p>Мертві</p>
+                  </div>
+                  <div id="wounded" class="flex_container">
+                    <svg style="height: 12px; width: 12px">
+                      <use
+                        href="./sprites.svg#ellips_hard_shut"
+                        xlink:href="./sprites.svg#ellips_hard_shut"
+                      ></use>
+                    </svg>
+                    <p>Важко поранені</p>
+                  </div>
+                </div>
 
-              <div class="container_text_statistic">
-                <div id="alive" class="flex_container">
-                  <svg style="height: 12px; width: 12px">
-                    <use
-                      href="./sprites.svg#ellips_alive"
-                      xlink:href="./sprites.svg#ellips_alive"
-                    ></use>
-                  </svg>
-                  <p>Живі</p>
-                </div>
-                <div id="dead" class="flex_container">
-                  <svg style="height: 12px; width: 12px">
-                    <use
-                      href="./sprites.svg#ellips_dead"
-                      xlink:href="./sprites.svg#ellips_dead"
-                    ></use>
-                  </svg>
-                  <p>Мертві</p>
-                </div>
-                <div id="wounded" class="flex_container">
-                  <svg style="height: 12px; width: 12px">
-                    <use
-                      href="./sprites.svg#ellips_hard_shut"
-                      xlink:href="./sprites.svg#ellips_hard_shut"
-                    ></use>
-                  </svg>
-                  <p>Важко поранені</p>
+                <div id="static_ellips_month">
+                  <img
+                    class="elips_img"
+                    src="./styles/images/Static_ellips.png"
+                    alt="Statistic_ellips"
+                  />
                 </div>
               </div>
 
-              
-              <div id="static_ellips_month">
-                <img
-                class="elips_img"
-                  src="./styles/images/Static_ellips.png"
-                  alt="Statistic_ellips"
-                />
+              <div id="grafic_container" class="grafic_container_desctope">
+                <div id="name_container" class="flex_cont_grafic">
+                  <svg style="height: 12px; width: 12px">
+                    <use
+                      href="./sprites.svg#ellips_earth_targets"
+                      xlink:href="./sprites.svg#ellips_earth_targets"
+                    ></use>
+                  </svg>
+                  <p>Наземні цілі</p>
+                </div>
+                <div id="graffic">
+                  <img
+                    class="img_graffic_sec2"
+                    src="./styles/images/Graffic_sec2.png"
+                    alt="Grafic_sec1"
+                  />
+                </div>
+              </div>
+
+              <div class="link_icons">
+                <a href="#" class="telegram">
+                  <img
+                    src="./styles/images/logos_telegram.png"
+                    alt="logo_telegramm"
+                  />
+                </a>
+                <a href="#" class="red_chrest"
+                  ><svg>
+                    <use
+                      href="./sprites.svg#logo_red_chrest"
+                      xlink:href="./sprites.svg#logo_red_chrest"
+                    ></use></svg
+                ></a>
               </div>
             </div>
-
-            <div id="grafic_container" class="grafic_container_desctope">
+            <div id="grafic_container" class="grafic_container">
               <div id="name_container" class="flex_cont_grafic">
                 <svg style="height: 12px; width: 12px">
                   <use
@@ -431,46 +464,13 @@
               </div>
               <div id="graffic">
                 <img
-                class="img_graffic_sec2"
+                  class="img_graffic_sec2"
                   src="./styles/images/Graffic_sec2.png"
                   alt="Grafic_sec1"
                 />
               </div>
             </div>
-  
-            <div class="link_icons">
-              <a href="#" class="telegram"
-            >
-            <img src="./styles/images/logos_telegram.png" alt="logo_telegramm">
-          </a>
-          <a href="#" class="red_chrest"
-            ><svg>
-              <use
-                href="./sprites.svg#logo_red_chrest"
-                xlink:href="./sprites.svg#logo_red_chrest"
-              ></use>
-            </svg></a>
-            </div>
           </div>
-          <div id="grafic_container" class="grafic_container">
-            <div id="name_container" class="flex_cont_grafic">
-              <svg style="height: 12px; width: 12px">
-                <use
-                  href="./sprites.svg#ellips_earth_targets"
-                  xlink:href="./sprites.svg#ellips_earth_targets"
-                ></use>
-              </svg>
-              <p>Наземні цілі</p>
-            </div>
-            <div id="graffic">
-              <img
-              class="img_graffic_sec2"
-                src="./styles/images/Graffic_sec2.png"
-                alt="Grafic_sec1"
-              />
-            </div>
-          </div>
-        </div>  
         </div>
       </div>
     </section>
@@ -611,11 +611,9 @@
             </ul>
           </div>
 
-
           <div class="wrapper_statistic_week">
             <div class="wrapper_elips_week">
               <div class="statistic_container_sec3" id="statistic_week">
-
                 <div class="container_text_statistic">
                   <div id="alive" class="flex_container">
                     <svg style="height: 12px; width: 12px">
@@ -653,9 +651,44 @@
                     alt="Statistic_ellips"
                   />
                 </div>
-            </div>
+              </div>
 
-            <div id="grafic_container" class="grafic_container_desctope">
+              <div id="grafic_container" class="grafic_container_desctope">
+                <div id="name_container" class="flex_cont_grafic">
+                  <svg style="height: 12px; width: 12px">
+                    <use
+                      href="./sprites.svg#ellips_aviations"
+                      xlink:href="./sprites.svg#ellips_aviations"
+                    ></use>
+                  </svg>
+                  <p>Авіація, БПЛА, ракети</p>
+                </div>
+                <div id="graffic">
+                  <img
+                    class="img_graffic_sec3"
+                    src="./styles/images/Graffic_sec3.png"
+                    alt="Grafic_sec1"
+                  />
+                </div>
+              </div>
+
+              <div class="link_icons">
+                <a href="#" class="telegram">
+                  <img
+                    src="./styles/images/logos_telegram.png"
+                    alt="logo_telegramm"
+                  />
+                </a>
+                <a href="#" class="red_chrest"
+                  ><svg>
+                    <use
+                      href="./sprites.svg#logo_red_chrest"
+                      xlink:href="./sprites.svg#logo_red_chrest"
+                    ></use></svg
+                ></a>
+              </div>
+            </div>
+            <div id="grafic_container" class="grafic_container">
               <div id="name_container" class="flex_cont_grafic">
                 <svg style="height: 12px; width: 12px">
                   <use
@@ -667,45 +700,12 @@
               </div>
               <div id="graffic">
                 <img
-                class="img_graffic_sec3"
+                  class="img_graffic_sec3"
                   src="./styles/images/Graffic_sec3.png"
                   alt="Grafic_sec1"
                 />
               </div>
             </div>
-            
-            <div class="link_icons">
-              <a href="#" class="telegram"
-            >
-            <img src="./styles/images/logos_telegram.png" alt="logo_telegramm">
-          </a>
-          <a href="#" class="red_chrest"
-            ><svg>
-              <use
-                href="./sprites.svg#logo_red_chrest"
-                xlink:href="./sprites.svg#logo_red_chrest"
-              ></use>
-            </svg></a>
-            </div>
-          </div>
-          <div id="grafic_container" class="grafic_container">
-            <div id="name_container" class="flex_cont_grafic">
-              <svg style="height: 12px; width: 12px">
-                <use
-                  href="./sprites.svg#ellips_aviations"
-                  xlink:href="./sprites.svg#ellips_aviations"
-                ></use>
-              </svg>
-              <p>Авіація, БПЛА, ракети</p>
-            </div>
-            <div id="graffic">
-              <img
-              class="img_graffic_sec3"
-                src="./styles/images/Graffic_sec3.png"
-                alt="Grafic_sec1"
-              />
-            </div>
-          </div>
           </div>
         </div>
       </div>
@@ -716,7 +716,11 @@
     <section class="sec-4" id="about_us">
       <div class="container">
         <div class="container_flex_sec_4">
-          <img src="./styles/images/img_desctop_sec_4.jpg" alt="Image" class="Img_sec4_desc">
+          <img
+            src="./styles/images/img_desctop_sec_4.jpg"
+            alt="Image"
+            class="Img_sec4_desc"
+          />
           <div class="flex">
             <h1>Про нас</h1>
             <p>
@@ -735,7 +739,11 @@
               будуть розширюватись.
             </p>
             <p>Підтримати проект тут</p>
-            <button type="button"><a href="https://www.callofheart.org/" target="_blank">Задонатити</a></button>
+            <button type="button">
+              <a href="https://www.callofheart.org/" target="_blank"
+                >Задонатити</a
+              >
+            </button>
           </div>
         </div>
       </div>
@@ -746,12 +754,12 @@
       <div class="container">
         <div class="flex_footer">
           <div class="footer_container">
-              <svg class="logo_footer">
-                <use
-                  href="./sprites.svg#Logo"
-                  xlink:href="./sprites.svg#Logo"
-                ></use>
-              </svg>
+            <svg class="logo_footer">
+              <use
+                href="./sprites.svg#Logo"
+                xlink:href="./sprites.svg#Logo"
+              ></use>
+            </svg>
             <div>
               <p>Контакти:</p>
               <p>statswar@gmail.com</p>

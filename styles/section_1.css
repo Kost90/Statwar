@@ -64,7 +64,7 @@
 }
 .side_menu li svg {
   height: 28px;
-  width: 28px;
+  width: 34px;
 }
 .side_menu .active {
   display: flex;
@@ -254,8 +254,27 @@
   }
 }
 @media (min-width: 1920px) {
+  .sec-1 {
+    text-align: center;
+  }
+  .sec-1 h1 {
+    font-size: 40px;
+    line-height: 37px;
+  }
+  .sec-1 p {
+    font-size: 16px;
+    line-height: 20px;
+    padding-bottom: 0;
+  }
   .wrapper_sec1 {
+    padding-top: 113px;
+    padding-bottom: 130px;
     align-items: flex-end;
+    gap: 5px;
+  }
+  .statistic_container {
+    width: 244px;
+    margin-left: 90px;
   }
   .grafic_container {
     display: none;
@@ -263,9 +282,8 @@
   .grafic_container_desctope {
     display: flex;
     flex-direction: column;
-    padding-bottom: 30px;
-    align-items: flex-start;
-    gap: 10px;
+    align-items: center;
+    width: 964px;
   }
   .container_text_statistic {
     margin-bottom: 0;

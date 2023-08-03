@@ -110,4 +110,23 @@
     width: 506px;
     height: 192px;
   }
+}
+@media (min-width: 1920px) {
+  .sec-3 {
+    text-align: center;
+  }
+  .sec-3 h1 {
+    font-size: 40px;
+    line-height: 37px;
+  }
+  .sec-3 p {
+    font-size: 26px;
+    line-height: 40px;
+    padding-bottom: 0;
+  }
+  .wrapper_sec3 {
+    align-items: flex-end;
+    padding-bottom: 130px;
+    gap: 5px;
+  }
 }/*# sourceMappingURL=section_3.css.map */

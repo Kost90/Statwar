@@ -1,21 +1,9 @@
-
 const statisticContainerYear = document.querySelector("#static_ellips_year");
 const statisticContainerMonth = document.querySelector("#static_ellips_month");
 const statisticContainerWeek = document.querySelector("#static_ellips_week");
-const sideMenu = document.querySelector("#side_menu");
-const sideMenuSec2 = document.querySelector("#side_menu_sec2");
-const sideMenuSec3 = document.querySelector("#side_menu_sec3");
-const parentTagSec1 = [];
-const parentTagSec2 = [];
-const parentTagSec3 = [];
-const canvas = document.querySelector("#ellips");
-const defaultValue = "Soldier";
-let currentValue = defaultValue;
-const btnArrow = document.querySelector("#btn_arrow");
-const btnArrowSec2 = document.querySelector("#btn_arrow_sec2");
-const btnArrowSec3 = document.querySelector("#btn_arrow_sec3");
 
 // ============================= PopUP=====================================
+
 const popUp = document.createElement("div");
 const textcontr = document.createElement("div");
 const PopUpH = document.createElement("h2");
@@ -110,6 +98,10 @@ statisticContainerWeek.addEventListener("click", (e) => {
 });
 // =================================================================================
 
+// For canvas==========================================================
+const canvas = document.querySelector("#ellips");
+const defaultValue = "Soldier";
+let currentValue = defaultValue;
 
 function handelClick(e) {
   const value = e.currentTarget.getAttribute("data-value");
@@ -124,6 +116,30 @@ function handelClick(e) {
     // throw
   }
 }
+
+function drowContent(value) {
+  if (canvas.getContext) {
+    const ctx = canvas.getContext("2d");
+    // drawing code here
+  } else {
+    // canvas-unsupported code here
+  }
+}
+
+// drowContent(defaultValue);
+
+// ====================================================================
+
+// ================= Dropdown and side menu=======================
+const sideMenu = document.querySelector("#side_menu");
+const sideMenuSec2 = document.querySelector("#side_menu_sec2");
+const sideMenuSec3 = document.querySelector("#side_menu_sec3");
+const parentTagSec1 = [];
+const parentTagSec2 = [];
+const parentTagSec3 = [];
+const btnArrow = document.querySelector("#btn_arrow");
+const btnArrowSec2 = document.querySelector("#btn_arrow_sec2");
+const btnArrowSec3 = document.querySelector("#btn_arrow_sec3");
 
 function dropDownMenuShow(menu, array, button) {
   for (const child of menu.children) {
@@ -171,13 +187,3 @@ btnArrowSec3.addEventListener("click", () => {
   showMenuLi(parentTagSec3, sideMenuSec3, btnArrowSec3);
 });
 
-function drowContent(value) {
-  if (canvas.getContext) {
-    const ctx = canvas.getContext("2d");
-    // drawing code here
-  } else {
-    // canvas-unsupported code here
-  }
-}
-
-// drowContent(defaultValue);

@@ -123,3 +123,40 @@
     height: 192px;
   }
 }
+
+@media (min-width:1920px){
+  .sec-2{
+    text-align: center;
+    h1 {
+      font-size: 40px;
+      line-height: 37px;
+    }
+    p {
+      font-size: 26px;
+      line-height: 40px;
+      padding-bottom: 0;
+    }
+  }
+
+  .wrapper_sec2{
+    align-items: flex-end;
+    padding-bottom: 130px;
+    gap: 5px;
+  }
+
+  .wrapper_elips_month {
+    justify-content: space-between;
+}
+
+.statistic_container_sec2{
+  width: 244px;
+  margin-left: 90px;
+}
+
+.grafic_container_desctope{
+  img{
+    width: 964px;
+    height: 366px;
+  }
+}
+}
