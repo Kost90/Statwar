@@ -139,11 +139,23 @@
 <circle cx="6" cy="6" r="6" fill="#B34038"/>    
     </symbol>
 
+    <symbol id="ellips_alive_desctop" width="26" height="26" viewBox="0 0 12 12" fill="none">
+<circle cx="6" cy="6" r="6" fill="#B34038"/>    
+    </symbol>
+
     <symbol id="ellips_dead" width="12" height="12" viewBox="0 0 12 12" fill="none">
 <circle cx="6" cy="6" r="6" fill="#334552"/>    
     </symbol>
 
+    <symbol id="ellips_dead_desctop" width="26" height="26" viewBox="0 0 12 12" fill="none">
+<circle cx="6" cy="6" r="6" fill="#334552"/>    
+    </symbol>
+
     <symbol id="ellips_hard_shut" width="12" height="12" viewBox="0 0 12 12" fill="none">
+<circle cx="6" cy="6" r="6" fill="#6F9FA6"/>  
+    </symbol>
+
+    <symbol id="ellips_hard_shut_desctop" width="26" height="26" viewBox="0 0 12 12" fill="none">
 <circle cx="6" cy="6" r="6" fill="#6F9FA6"/>  
     </symbol>
 
