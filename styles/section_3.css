@@ -60,6 +60,16 @@
   height: 129px;
 }
 
+.flex_cont_grafic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+}
+.flex_cont_grafic p {
+  font-size: 16px;
+}
+
 @media (min-width: 768px) {
   .sec-3 h1 {
     font-size: 30px;
@@ -109,6 +119,9 @@
   .img_graffic_sec3 {
     width: 506px;
     height: 192px;
+  }
+  .flex_cont_grafic {
+    display: none;
   }
 }
 @media (min-width: 1920px) {

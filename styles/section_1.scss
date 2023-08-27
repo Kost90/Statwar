@@ -59,10 +59,11 @@
     p {
       font-size: 18px;
       line-height: 19.9px;
+      font-style: normal;
     }
     svg {
       height: 28px;
-      width: 34px;
+      width: 28px;
     }
   }
   .active {
@@ -73,6 +74,7 @@
   .show {
     display: flex;
     align-items: center;
+    justify-content: flex-start;
     gap: 6px;
     border: 1px solid black;
     background-color: #fff;
@@ -145,6 +147,9 @@
   justify-content: center;
   align-items: center;
   gap: 9px;
+  p{
+    font-size: 16px;
+  }
 }
 
 .img_graffic {
@@ -166,6 +171,8 @@
     h1 {
       font-size: 30px;
       line-height: 37.866px;
+      padding-bottom: 10px;
+      padding-top: 56px;
     }
     p {
       font-size: 16px;
@@ -177,8 +184,10 @@
   .wrapper_sec1 {
     flex-direction: row;
     gap: 40px;
-    align-items: flex-start;
+    align-items: flex-end;
     justify-content: space-between;
+    padding-bottom: 40px;
+    padding-top: 0;
   }
 
   #btn_arrow {

@@ -68,6 +68,8 @@ header {
   font-size: 16px;
   line-height: 19px;
   padding: 1px 7px;
+  background-color: white;
+  color: black;
 }
 
 .nav_menu .donate_header {
