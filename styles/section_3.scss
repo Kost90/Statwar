@@ -65,7 +65,7 @@
   justify-content: center;
   align-items: center;
   gap: 9px;
-  p{
+  p {
     font-size: 16px;
   }
 }
@@ -75,6 +75,8 @@
     h1 {
       font-size: 30px;
       line-height: 37.866px;
+      padding-top: 10px;
+      padding-bottom: 10px;
     }
     p {
       font-size: 16px;
@@ -85,8 +87,9 @@
   .wrapper_sec3 {
     flex-direction: row;
     gap: 40px;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
+    padding-top: 40px;
   }
 
   #btn_arrow_sec3 {
@@ -128,14 +131,17 @@
     width: 506px;
     height: 192px;
   }
-  
+
   .flex_cont_grafic {
     display: none;
   }
+  .grafic_container {
+    padding-bottom: 0;
+  }
 }
 
-@media (min-width:1920px){
-  .sec-3{
+@media (min-width: 1920px) {
+  .sec-3 {
     text-align: center;
     h1 {
       font-size: 40px;
@@ -148,7 +154,7 @@
     }
   }
 
-  .wrapper_sec3{
+  .wrapper_sec3 {
     align-items: flex-end;
     padding-bottom: 130px;
     gap: 5px;

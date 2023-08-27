@@ -74,6 +74,8 @@
   .sec-3 h1 {
     font-size: 30px;
     line-height: 37.866px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   .sec-3 p {
     font-size: 16px;
@@ -82,8 +84,9 @@
   .wrapper_sec3 {
     flex-direction: row;
     gap: 40px;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
+    padding-top: 40px;
   }
   #btn_arrow_sec3 {
     display: none;
@@ -122,6 +125,9 @@
   }
   .flex_cont_grafic {
     display: none;
+  }
+  .grafic_container {
+    padding-bottom: 0;
   }
 }
 @media (min-width: 1920px) {
