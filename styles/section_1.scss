@@ -63,7 +63,7 @@
     }
     svg {
       height: 28px;
-      width: 28px;
+      width: 35px;
     }
   }
   .active {
@@ -316,5 +316,8 @@
 
   .container_text_statistic {
     margin-bottom: 0;
+    p {
+      font-size: 26px;
+    }
   }
 }

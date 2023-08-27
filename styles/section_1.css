@@ -65,7 +65,7 @@
 }
 .side_menu li svg {
   height: 28px;
-  width: 28px;
+  width: 35px;
 }
 .side_menu .active {
   display: flex;
@@ -299,5 +299,8 @@
   }
   .container_text_statistic {
     margin-bottom: 0;
+  }
+  .container_text_statistic p {
+    font-size: 26px;
   }
 }/*# sourceMappingURL=section_1.css.map */
