@@ -1,3 +1,4 @@
+
 const statisticContainerYear = document.querySelector("#static_ellips_year");
 const statisticContainerMonth = document.querySelector("#static_ellips_month");
 const statisticContainerWeek = document.querySelector("#static_ellips_week");
@@ -129,3 +130,4 @@ btnArrowSec2.addEventListener("click", () => {
 btnArrowSec3.addEventListener("click", () => {
   showMenuLi(parentTagSec3, sideMenuSec3, btnArrowSec3);
 });
+

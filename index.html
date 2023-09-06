@@ -31,10 +31,15 @@
               ></use>
             </svg>
           </a>
-          <button type="button" id="En">En</button>
-          <button type="button" id="Ua">Ua</button>
+          <button type="button" id="En" languaage="english">En</button>
+          <button type="button" id="Ua" languaage="ukrainian" class="active">
+            Ua
+          </button>
           <button type="button" class="donate_header">
-            <a href="https://www.callofheart.org/" target="_blank"
+            <a
+              href="https://www.callofheart.org/"
+              target="_blank"
+              class="donate"
               >Задонатити</a
             >
           </button>
@@ -45,8 +50,10 @@
     <!-- ===========================SECTION1=================================== -->
     <section class="sec-1">
       <div class="container">
-        <h1 id="h1_sec1">Прогноз втрат рф на наступні 12 місяців</h1>
-        <p id="p_sec1">
+        <h1 id="h1_sec1" class="forecast">
+          Прогноз втрат рф на наступні 12 місяців
+        </h1>
+        <p id="p_sec1" class="forecastP">
           *Прогноз розроблений на основі статистики останніх 5 тижнів Генштабу
           ЗСУ
         </p>
@@ -68,7 +75,7 @@
                     xlink:href="./sprites.svg#Soldier"
                   ></use>
                 </svg>
-                <p>Військові рф</p>
+                <p class="soldiersRus">Військові рф</p>
               </li>
               <li data-value="Tanks">
                 <svg>
@@ -77,7 +84,7 @@
                     xlink:href="./sprites.svg#Tanks"
                   ></use>
                 </svg>
-                <p>Танки</p>
+                <p class="tanks">Танки</p>
               </li>
               <li data-value="Armored_machine">
                 <svg>
@@ -86,7 +93,7 @@
                     xlink:href="./sprites.svg#Bmm"
                   ></use>
                 </svg>
-                <p>ББМашини</p>
+                <p class="armmachines">ББМашини</p>
               </li>
               <li data-value="Artyleri">
                 <svg>
@@ -95,7 +102,7 @@
                     xlink:href="./sprites.svg#Arta"
                   ></use>
                 </svg>
-                <p>Артилерія</p>
+                <p class="artilery">Артилерія</p>
               </li>
               <li data-value="Rszv">
                 <svg>
@@ -104,7 +111,7 @@
                     xlink:href="./sprites.svg#Rszo"
                   ></use>
                 </svg>
-                <p>РСЗВ</p>
+                <p class="rszo">РСЗВ</p>
               </li>
               <li data-value="Planes">
                 <svg>
@@ -113,7 +120,7 @@
                     xlink:href="./sprites.svg#Planes"
                   ></use>
                 </svg>
-                <p>Бойові літаки</p>
+                <p class="planes">Бойові літаки</p>
               </li>
               <li data-value="Helicopters">
                 <svg>
@@ -122,7 +129,7 @@
                     xlink:href="./sprites.svg#Helicopters"
                   ></use>
                 </svg>
-                <p>Гелікоптери</p>
+                <p class="helicopters">Гелікоптери</p>
               </li>
               <li data-value="Pvo">
                 <svg>
@@ -131,7 +138,7 @@
                     xlink:href="./sprites.svg#Pvo"
                   ></use>
                 </svg>
-                <p>ППО/ЗРК</p>
+                <p class="PPO">ППО/ЗРК</p>
               </li>
             </ul>
           </div>
@@ -139,7 +146,10 @@
           <div class="statistic_container" id="year-statistic">
             <div class="container_text_statistic">
               <div id="alive" class="flex_container">
-                <svg style="height: 12px; width: 12px" class="svg_mobile_tablet">
+                <svg
+                  style="height: 12px; width: 12px"
+                  class="svg_mobile_tablet"
+                >
                   <use
                     href="./sprites.svg#ellips_alive"
                     xlink:href="./sprites.svg#ellips_alive"
@@ -151,11 +161,14 @@
                     xlink:href="./sprites.svg#ellips_alive_desctop"
                   ></use>
                 </svg>
-                <p>Живі</p>
+                <p class="alive">Живі</p>
               </div>
 
               <div id="dead" class="flex_container">
-                <svg style="height: 12px; width: 12px" class="svg_mobile_tablet">
+                <svg
+                  style="height: 12px; width: 12px"
+                  class="svg_mobile_tablet"
+                >
                   <use
                     href="./sprites.svg#ellips_dead"
                     xlink:href="./sprites.svg#ellips_dead"
@@ -167,11 +180,14 @@
                     xlink:href="./sprites.svg#ellips_dead_desctop"
                   ></use>
                 </svg>
-                <p>Мертві</p>
+                <p class="dead">Мертві</p>
               </div>
 
               <div id="wounded" class="flex_container">
-                <svg style="height: 12px; width: 12px" class="svg_mobile_tablet">
+                <svg
+                  style="height: 12px; width: 12px"
+                  class="svg_mobile_tablet"
+                >
                   <use
                     href="./sprites.svg#ellips_hard_shut"
                     xlink:href="./sprites.svg#ellips_hard_shut"
@@ -183,7 +199,7 @@
                     xlink:href="./sprites.svg#ellips_hard_shut_desctop"
                   ></use>
                 </svg>
-                <p>Важко поранені</p>
+                <p class="wounded">Важко поранені</p>
               </div>
             </div>
 
@@ -198,13 +214,20 @@
             <!-- <canvas id="ellips"></canvas> -->
             <div class="popup_test" id="popup_sec1">
               <div class="flex_popup">
-                <h2>Загальна кількість</h2>
+                <h2 class="totalnumber">Загальна кількість</h2>
                 <button type="button" id="close_popup">X</button>
               </div>
-              
-              <p>*Дані загальної кількості військових засобів рф взяті з відкритих джерел “назва” та включають в себе: законсервовані на складах, включно на озброєнні, тощо.</p>
-              <p>**Дані кількості військових засобів, які перебували на озброєнні ЗС рф на початок повномаcштабного вторгнення взято з “назва”</p>
-          </div>
+
+              <p class="popupPfirst">
+                *Дані загальної кількості військових засобів рф взяті з
+                відкритих джерел “назва” та включають в себе: законсервовані на
+                складах, включно на озброєнні, тощо.
+              </p>
+              <p class="popupPsecond">
+                **Дані кількості військових засобів, які перебували на озброєнні
+                ЗС рф на початок повномаcштабного вторгнення взято з “назва”
+              </p>
+            </div>
           </div>
 
           <div id="grafic_container" class="grafic_container_desctope">
@@ -216,7 +239,7 @@
                 ></use>
               </svg>
 
-              <p>Військові РФ</p>
+              <p class="soldiersRus">Військові РФ</p>
             </div>
             <div id="graffic">
               <img
@@ -253,7 +276,7 @@
               ></use>
             </svg>
 
-            <p>Військові РФ</p>
+            <p class="soldiersRus">Військові РФ</p>
           </div>
           <div id="graffic">
             <img
@@ -270,8 +293,8 @@
 
     <section class="sec-2">
       <div class="container">
-        <h1>Помісячна статистика</h1>
-        <p>*На основі даних статистики Генштабу ЗСУ</p>
+        <h1 class="monthstatistic">Помісячна статистика</h1>
+        <p class="dataHeadoffice">*На основі даних статистики Генштабу ЗСУ</p>
         <div class="wrapper_sec2">
           <div class="menu_statistic">
             <ul class="side_menu direction_row" id="side_menu_sec2">
@@ -290,7 +313,7 @@
                     xlink:href="./sprites.svg#Soldier"
                   ></use>
                 </svg>
-                <p>Військові РФ</p>
+                <p class="soldiersRus">Військові РФ</p>
               </li>
               <li>
                 <svg>
@@ -299,7 +322,7 @@
                     xlink:href="./sprites.svg#earthtarget"
                   ></use>
                 </svg>
-                <p>Наземні цілі</p>
+                <p class="groundtarget">Наземні цілі</p>
               </li>
               <li>
                 <svg>
@@ -308,7 +331,7 @@
                     xlink:href="./sprites.svg#bpla"
                   ></use>
                 </svg>
-                <p>Авіація, БПЛА, ракети</p>
+                <p class="aviation">Авіація, БПЛА, ракети</p>
               </li>
               <li>
                 <svg>
@@ -317,7 +340,7 @@
                     xlink:href="./sprites.svg#Tanks"
                   ></use>
                 </svg>
-                <p>Танки</p>
+                <p class="tanks">Танки</p>
               </li>
               <li>
                 <svg>
@@ -326,7 +349,7 @@
                     xlink:href="./sprites.svg#Bmm"
                   ></use>
                 </svg>
-                <p>ББМашини</p>
+                <p class="armmachines">ББМашини</p>
               </li>
               <li>
                 <svg>
@@ -335,7 +358,7 @@
                     xlink:href="./sprites.svg#Arta"
                   ></use>
                 </svg>
-                <p>Артилерія</p>
+                <p class="artilery">Артилерія</p>
               </li>
               <li>
                 <svg>
@@ -344,7 +367,7 @@
                     xlink:href="./sprites.svg#Rszo"
                   ></use>
                 </svg>
-                <p>РСЗВ</p>
+                <p class="rszo">РСЗВ</p>
               </li>
               <li>
                 <svg>
@@ -353,7 +376,7 @@
                     xlink:href="./sprites.svg#Planes"
                   ></use>
                 </svg>
-                <p>Бойові літаки</p>
+                <p class="planes">Бойові літаки</p>
               </li>
               <li>
                 <svg>
@@ -362,7 +385,7 @@
                     xlink:href="./sprites.svg#Helicopters"
                   ></use>
                 </svg>
-                <p>Гелікоптери</p>
+                <p class="helicopters">Гелікоптери</p>
               </li>
               <li>
                 <svg>
@@ -371,7 +394,7 @@
                     xlink:href="./sprites.svg#Pvo"
                   ></use>
                 </svg>
-                <p>ППО/ЗРК</p>
+                <p class="PPO">ППО/ЗРК</p>
               </li>
               <li>
                 <svg>
@@ -380,7 +403,7 @@
                     xlink:href="./sprites.svg#rockets"
                   ></use>
                 </svg>
-                <p>Крилаті ракети</p>
+                <p class="rockets">Крилаті ракети</p>
               </li>
               <li>
                 <svg>
@@ -389,7 +412,7 @@
                     xlink:href="./sprites.svg#jeep_machine"
                   ></use>
                 </svg>
-                <p>Автомобільна техніка</p>
+                <p class="autotechnicks">Автомобільна техніка</p>
               </li>
               <li>
                 <svg>
@@ -398,7 +421,7 @@
                     xlink:href="./sprites.svg#special_machine"
                   ></use>
                 </svg>
-                <p>Спецтехніка</p>
+                <p class="specialtech">Спецтехніка</p>
               </li>
             </ul>
           </div>
@@ -407,7 +430,10 @@
               <div class="statistic_container_sec2" id="statistic_month">
                 <div class="container_text_statistic">
                   <div id="alive" class="flex_container">
-                    <svg style="height: 12px; width: 12px" class="svg_mobile_tablet">
+                    <svg
+                      style="height: 12px; width: 12px"
+                      class="svg_mobile_tablet"
+                    >
                       <use
                         href="./sprites.svg#ellips_alive"
                         xlink:href="./sprites.svg#ellips_alive"
@@ -419,10 +445,13 @@
                         xlink:href="./sprites.svg#ellips_alive_desctop"
                       ></use>
                     </svg>
-                    <p>Живі</p>
+                    <p class="alive">Живі</p>
                   </div>
                   <div id="dead" class="flex_container">
-                    <svg style="height: 12px; width: 12px" class="svg_mobile_tablet">
+                    <svg
+                      style="height: 12px; width: 12px"
+                      class="svg_mobile_tablet"
+                    >
                       <use
                         href="./sprites.svg#ellips_dead"
                         xlink:href="./sprites.svg#ellips_dead"
@@ -434,10 +463,13 @@
                         xlink:href="./sprites.svg#ellips_dead_desctop"
                       ></use>
                     </svg>
-                    <p>Мертві</p>
+                    <p class="dead">Мертві</p>
                   </div>
                   <div id="wounded" class="flex_container">
-                    <svg style="height: 12px; width: 12px" class="svg_mobile_tablet">
+                    <svg
+                      style="height: 12px; width: 12px"
+                      class="svg_mobile_tablet"
+                    >
                       <use
                         href="./sprites.svg#ellips_hard_shut"
                         xlink:href="./sprites.svg#ellips_hard_shut"
@@ -449,7 +481,7 @@
                         xlink:href="./sprites.svg#ellips_hard_shut_desctop"
                       ></use>
                     </svg>
-                    <p>Важко поранені</p>
+                    <p class="wounded">Важко поранені</p>
                   </div>
                 </div>
 
@@ -462,13 +494,21 @@
                 </div>
                 <div class="popup_test" id="popup_sec2">
                   <div class="flex_popup">
-                    <h2>Загальна кількість</h2>
+                    <h2 class="totalnumber">Загальна кількість</h2>
                     <button type="button" id="close_popup_sec2">X</button>
                   </div>
-                  
-                  <p>*Дані загальної кількості військових засобів рф взяті з відкритих джерел “назва” та включають в себе: законсервовані на складах, включно на озброєнні, тощо.</p>
-                  <p>**Дані кількості військових засобів, які перебували на озброєнні ЗС рф на початок повномаcштабного вторгнення взято з “назва”</p>
-              </div>
+
+                  <p class="popupPfirst">
+                    *Дані загальної кількості військових засобів рф взяті з
+                    відкритих джерел “назва” та включають в себе: законсервовані
+                    на складах, включно на озброєнні, тощо.
+                  </p>
+                  <p class="popupPsecond">
+                    **Дані кількості військових засобів, які перебували на
+                    озброєнні ЗС рф на початок повномаcштабного вторгнення взято
+                    з “назва”
+                  </p>
+                </div>
               </div>
 
               <div id="grafic_container" class="grafic_container_desctope">
@@ -479,7 +519,7 @@
                       xlink:href="./sprites.svg#ellips_earth_targets"
                     ></use>
                   </svg>
-                  <p>Наземні цілі</p>
+                  <p class="groundtarget">Наземні цілі</p>
                 </div>
                 <div id="graffic">
                   <img
@@ -514,7 +554,7 @@
                     xlink:href="./sprites.svg#ellips_earth_targets"
                   ></use>
                 </svg>
-                <p>Наземні цілі</p>
+                <p class="groundtarget">Наземні цілі</p>
               </div>
               <div id="graffic">
                 <img
@@ -532,8 +572,10 @@
     <!-- ======================== SECTION 3 ==================================== -->
     <section class="sec-3">
       <div class="container">
-        <h1>Тижнева статистика</h1>
-        <p>*На основі даних статистики Генштабу ЗСУ за останні 12 тижні</p>
+        <h1 class="weekstatistic">Тижнева статистика</h1>
+        <p class="dataheadofficeweeks">
+          *На основі даних статистики Генштабу ЗСУ за останні 12 тижні
+        </p>
         <div class="wrapper_sec3">
           <div class="menu_statistic">
             <ul class="side_menu direction_row" id="side_menu_sec3">
@@ -552,7 +594,7 @@
                     xlink:href="./sprites.svg#Soldier"
                   ></use>
                 </svg>
-                <p>Військові РФ</p>
+                <p class="soldiersRus">Військові РФ</p>
               </li>
               <li>
                 <svg>
@@ -561,7 +603,7 @@
                     xlink:href="./sprites.svg#earthtarget"
                   ></use>
                 </svg>
-                <p>Наземні цілі</p>
+                <p class="groundtarget">Наземні цілі</p>
               </li>
               <li>
                 <svg>
@@ -570,7 +612,7 @@
                     xlink:href="./sprites.svg#bpla"
                   ></use>
                 </svg>
-                <p>Авіація, БПЛА, ракети</p>
+                <p class="aviation">Авіація, БПЛА, ракети</p>
               </li>
               <li>
                 <svg>
@@ -579,7 +621,7 @@
                     xlink:href="./sprites.svg#Tanks"
                   ></use>
                 </svg>
-                <p>Танки</p>
+                <p class="tanks">Танки</p>
               </li>
               <li>
                 <svg>
@@ -588,7 +630,7 @@
                     xlink:href="./sprites.svg#Bmm"
                   ></use>
                 </svg>
-                <p>ББМашини</p>
+                <p class="armmachines">ББМашини</p>
               </li>
               <li>
                 <svg>
@@ -597,7 +639,7 @@
                     xlink:href="./sprites.svg#Arta"
                   ></use>
                 </svg>
-                <p>Артилерія</p>
+                <p class="artilery">Артилерія</p>
               </li>
               <li>
                 <svg>
@@ -606,7 +648,7 @@
                     xlink:href="./sprites.svg#Rszo"
                   ></use>
                 </svg>
-                <p>РСЗВ</p>
+                <p class="rszo">РСЗВ</p>
               </li>
               <li>
                 <svg>
@@ -615,7 +657,7 @@
                     xlink:href="./sprites.svg#Planes"
                   ></use>
                 </svg>
-                <p>Бойові літаки</p>
+                <p class="planes">Бойові літаки</p>
               </li>
               <li>
                 <svg>
@@ -624,7 +666,7 @@
                     xlink:href="./sprites.svg#Helicopters"
                   ></use>
                 </svg>
-                <p>Гелікоптери</p>
+                <p class="helicopters">Гелікоптери</p>
               </li>
               <li>
                 <svg>
@@ -633,7 +675,7 @@
                     xlink:href="./sprites.svg#Pvo"
                   ></use>
                 </svg>
-                <p>ППО/ЗРК</p>
+                <p class="PPO">ППО/ЗРК</p>
               </li>
               <li>
                 <svg>
@@ -642,7 +684,7 @@
                     xlink:href="./sprites.svg#rockets"
                   ></use>
                 </svg>
-                <p>Крилаті ракети</p>
+                <p class="rockets">Крилаті ракети</p>
               </li>
               <li>
                 <svg>
@@ -651,7 +693,7 @@
                     xlink:href="./sprites.svg#jeep_machine"
                   ></use>
                 </svg>
-                <p>Автомобільна техніка</p>
+                <p class="autotechnicks">Автомобільна техніка</p>
               </li>
               <li>
                 <svg>
@@ -660,7 +702,7 @@
                     xlink:href="./sprites.svg#special_machine"
                   ></use>
                 </svg>
-                <p>Спецтехніка</p>
+                <p class="specialtech">Спецтехніка</p>
               </li>
             </ul>
           </div>
@@ -670,7 +712,10 @@
               <div class="statistic_container_sec3" id="statistic_week">
                 <div class="container_text_statistic">
                   <div id="alive" class="flex_container">
-                    <svg style="height: 12px; width: 12px" class="svg_mobile_tablet">
+                    <svg
+                      style="height: 12px; width: 12px"
+                      class="svg_mobile_tablet"
+                    >
                       <use
                         href="./sprites.svg#ellips_alive"
                         xlink:href="./sprites.svg#ellips_alive"
@@ -682,10 +727,13 @@
                         xlink:href="./sprites.svg#ellips_alive_desctop"
                       ></use>
                     </svg>
-                    <p>Живі</p>
+                    <p class="alive">Живі</p>
                   </div>
                   <div id="dead" class="flex_container">
-                    <svg style="height: 12px; width: 12px" class="svg_mobile_tablet">
+                    <svg
+                      style="height: 12px; width: 12px"
+                      class="svg_mobile_tablet"
+                    >
                       <use
                         href="./sprites.svg#ellips_dead"
                         xlink:href="./sprites.svg#ellips_dead"
@@ -697,10 +745,13 @@
                         xlink:href="./sprites.svg#ellips_dead_desctop"
                       ></use>
                     </svg>
-                    <p>Мертві</p>
+                    <p class="dead">Мертві</p>
                   </div>
                   <div id="wounded" class="flex_container">
-                    <svg style="height: 12px; width: 12px" class="svg_mobile_tablet">
+                    <svg
+                      style="height: 12px; width: 12px"
+                      class="svg_mobile_tablet"
+                    >
                       <use
                         href="./sprites.svg#ellips_hard_shut"
                         xlink:href="./sprites.svg#ellips_hard_shut"
@@ -712,7 +763,7 @@
                         xlink:href="./sprites.svg#ellips_hard_shut_desctop"
                       ></use>
                     </svg>
-                    <p>Важко поранені</p>
+                    <p class="wounded">Важко поранені</p>
                   </div>
                 </div>
 
@@ -725,13 +776,21 @@
                 </div>
                 <div class="popup_test" id="popup_sec3">
                   <div class="flex_popup">
-                    <h2>Загальна кількість</h2>
+                    <h2 class="totalnumber">Загальна кількість</h2>
                     <button type="button" id="close_popup_sec3">X</button>
                   </div>
-                  
-                  <p>*Дані загальної кількості військових засобів рф взяті з відкритих джерел “назва” та включають в себе: законсервовані на складах, включно на озброєнні, тощо.</p>
-                  <p>**Дані кількості військових засобів, які перебували на озброєнні ЗС рф на початок повномаcштабного вторгнення взято з “назва”</p>
-              </div>
+
+                  <p class="popupPfirst">
+                    *Дані загальної кількості військових засобів рф взяті з
+                    відкритих джерел “назва” та включають в себе: законсервовані
+                    на складах, включно на озброєнні, тощо.
+                  </p>
+                  <p class="popupPsecond">
+                    **Дані кількості військових засобів, які перебували на
+                    озброєнні ЗС рф на початок повномаcштабного вторгнення взято
+                    з “назва”
+                  </p>
+                </div>
               </div>
 
               <div id="grafic_container" class="grafic_container_desctope">
@@ -742,7 +801,7 @@
                       xlink:href="./sprites.svg#ellips_aviations"
                     ></use>
                   </svg>
-                  <p>Авіація, БПЛА, ракети</p>
+                  <p class="aviation">Авіація, БПЛА, ракети</p>
                 </div>
                 <div id="graffic">
                   <img
@@ -777,7 +836,7 @@
                     xlink:href="./sprites.svg#ellips_aviations"
                   ></use>
                 </svg>
-                <p>Авіація, БПЛА, ракети</p>
+                <p class="aviation">Авіація, БПЛА, ракети</p>
               </div>
               <div id="graffic">
                 <img
@@ -803,25 +862,28 @@
             class="Img_sec4_desc"
           />
           <div class="flex">
-            <h1>Про нас</h1>
-            <p>
+            <h1 class="about_us">Про нас</h1>
+            <p class="ourproject">
               Наш проект "StatsWar" створений, щоб всі катастрофи під назвою
               "російська окупаційна війна 2022" проти народу України були
               зафіксовані НАЗАВЖДИ.
             </p>
-            <p>
+            <p class="statdata">
               Статистика, дані, аналітика та прогнозування на нашому ресурсі є в
               дечому унікальні. Наша команда має за мету опрацювати максимальну
               кількість важливої статистики та зробити максимально зрозумілий
               аналіз цієї війни для Вас.
             </p>
-            <p>
+            <p class="updates">
               В Подальших оновленнях ресурсу дані та статистика про цю війну
               будуть розширюватись.
             </p>
-            <p>Підтримати проект тут</p>
+            <p class="support">Підтримати проект тут</p>
             <button type="button">
-              <a href="https://www.callofheart.org/" target="_blank"
+              <a
+                href="https://www.callofheart.org/"
+                target="_blank"
+                class="donate"
                 >Задонатити</a
               >
             </button>
@@ -842,8 +904,8 @@
               ></use>
             </svg>
             <div>
-              <p>Контакти:</p>
-              <p>statswar@gmail.com</p>
+              <p class="contacts">Контакти:</p>
+              <p class="email">statswar@gmail.com</p>
             </div>
           </div>
         </div>
@@ -853,6 +915,8 @@
         <p>©2023 @IvanKolodiy</p>
       </div>
     </footer>
-    <script src="index.js"></script>
+    <script type="module" src="index.js"></script>
+    <script type="module" src="translate.js"></script>
+    <script type="module" src="data.js"></script>
   </body>
 </html>
