@@ -74,7 +74,7 @@
     h1 {
       font-size: 30px;
       line-height: 37.866px;
-      padding-top: 10px;
+      padding-top: 0;
       padding-bottom: 10px;
     }
     p {
@@ -89,6 +89,7 @@
     align-items: center;
     justify-content: space-between;
     padding-top: 40px;
+    padding-bottom: 30px;
   }
 
   #btn_arrow_sec3 {
@@ -135,7 +136,7 @@
     display: none;
   }
   .grafic_container {
-    padding-bottom: 0;
+    padding-bottom: 30px;
   }
 }
 
@@ -154,8 +155,13 @@
   }
 
   .wrapper_sec3 {
-    align-items: flex-end;
-    padding-bottom: 130px;
+    align-items: unset;
+    padding-top: 65px;
+    padding-bottom: 65px;
     gap: 5px;
+  }
+
+  .wrapper_statistic_week{
+    justify-content: space-between;
   }
 }

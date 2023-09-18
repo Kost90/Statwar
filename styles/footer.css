@@ -40,4 +40,12 @@
     width: 159px;
     height: 43px;
   }
+}
+@media (min-width: 1920px) {
+  .footer .container {
+    padding: 0 20px;
+  }
+  .footer p {
+    padding-bottom: 25px;
+  }
 }/*# sourceMappingURL=footer.css.map */

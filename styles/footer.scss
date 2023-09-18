@@ -46,3 +46,14 @@
     }
   }
 }
+
+@media(min-width:1920px){
+  .footer {
+    .container{
+      padding: 0 20px;
+    }
+    p {
+      padding-bottom: 25px;
+    }
+  }
+}

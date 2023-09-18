@@ -74,8 +74,8 @@
   .sec-2 h1 {
     font-size: 30px;
     line-height: 37.866px;
-    padding-top: 10px;
     padding-bottom: 10px;
+    padding-top: 0;
   }
   .sec-2 p {
     font-size: 16px;
@@ -87,6 +87,7 @@
     align-items: center;
     justify-content: space-between;
     padding-top: 40px;
+    padding-bottom: 30px;
   }
   #btn_arrow_sec2 {
     display: none;
@@ -148,9 +149,14 @@
     padding-bottom: 0;
   }
   .wrapper_sec2 {
-    align-items: flex-end;
-    padding-bottom: 130px;
+    align-items: unset;
+    padding-top: 65px;
+    padding-bottom: 65px;
     gap: 5px;
+  }
+  .wrapper_statistic_month {
+    gap: 0;
+    justify-content: space-between;
   }
   .wrapper_elips_month {
     justify-content: space-between;
